@@ -31,7 +31,7 @@ async function connect(url,key){if(!window.supabase?.createClient)throw new Erro
 $('connect').onclick=async()=>{try{setBusy(true);await connect($('url').value,$('key').value)}catch(e){msg('connectStatus','連線失敗：'+err(e));}finally{setBusy(false)}};
 $('forget').onclick=()=>{localStorage.removeItem('bestfirst-supa');$('url').value='';$('key').value='';sb=null;msg('connectStatus','已清除本裝置儲存的連線資訊。');show('lobbyPanel',false)};
 const cfg=saved();if(cfg.url){$('url').value=cfg.url;$('key').value=cfg.key||'';connect(cfg.url,cfg.key||'').catch(e=>msg('connectStatus','尚未連線：'+err(e)))}
-function playerId(){let id=sessionStorage.getItem('bestfirst-player-id');if(!id){id=crypto.randomUUID();sessionStorage.setItem('bestfirst-player-id',id)}return id}
+function playerId(){return crypto.randomUUID()}
 async function rpc(name,args){if(!sb)throw new Error('請先連接 Supabase。');const {data,error}=await sb.rpc(name,args);if(error)throw error;return data}
 async function enterRoom(data,nick){room=data.code;me={id:data.player_id,token:data.token,nickname:nick};sessionStorage.setItem('bestfirst-room',JSON.stringify({room,me}));$('roomCode').textContent=room;show('roomPanel',true);show('lobbyPanel',false);msg('roomNotice','房間已連接，正在同步狀態…');await refresh();if(poll)clearInterval(poll);poll=setInterval(()=>refresh().catch(()=>{}),2200)}
 $('create').onclick=async()=>{try{setBusy(true);const nick=$('nickname').value.trim();if(!nick)throw new Error('請先輸入暱稱。');const d=await rpc('create_game_room',{p_nickname:nick,p_player_id:playerId()});await enterRoom(d,nick)}catch(e){msg('lobbyStatus','建立失敗：'+err(e))}finally{setBusy(false)}};
