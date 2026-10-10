@@ -21,7 +21,7 @@
 </main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" onerror="this.onerror=null;this.src='https://unpkg.com/@supabase/supabase-js@2'"></script>
 <script>
-const $=id=>document.getElementById(id);let sb=null,room=null,me=null,poll=null,state=null,busy=false;
+const $=id=>document.getElementById(id);let sb=null,room=null,me=null,poll=null,state=null,busy=false,refreshing=false,lastRenderSignature='';
 const show=(id,yes)=>$(id).classList.toggle('hidden',!yes);
 function msg(id,text){$(id).textContent=text}
 function err(e){return e?.message||String(e||'未知錯誤')}
