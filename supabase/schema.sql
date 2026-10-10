@@ -4,6 +4,7 @@ create extension if not exists pgcrypto;
 create table if not exists public.game_rooms (
   code text primary key,
   host_player_id uuid not null,
+  dealer_player_id uuid,
   phase text not null default 'lobby' check (phase in ('lobby','allocation','choosing','results')),
   current_round integer not null default 0,
   total_rounds integer not null default 0,
@@ -11,6 +12,7 @@ create table if not exists public.game_rooms (
   choice_deadline timestamptz,
   created_at timestamptz not null default now()
 );
+alter table public.game_rooms add column if not exists dealer_player_id uuid;
 create table if not exists public.game_players (
   id uuid primary key,
   room_code text not null references public.game_rooms(code) on delete cascade,
@@ -61,7 +63,7 @@ begin
  select * into r from game_rooms where code=upper(trim(p_code)); if not found then raise exception '房間不存在'; end if;
  select * into me from game_players where room_code=r.code and id=p_player_id and token=p_token; if not found then raise exception '玩家驗證失敗'; end if;
  select coalesce(jsonb_agg(jsonb_build_object('id',p.id,'nickname',p.nickname,'seat_order',p.seat_order,'score',p.score,'area',p.area,'has_chosen',p.choice is not null,'choice',case when r.phase='results' then p.choice else null end) order by p.seat_order),'[]'::jsonb) into ps from game_players p where p.room_code=r.code;
- return jsonb_build_object('code',r.code,'phase',r.phase,'current_round',r.current_round,'total_rounds',r.total_rounds,'host_player_id',r.host_player_id,'allocation_deadline',r.allocation_deadline,'choice_deadline',r.choice_deadline,'players',ps,'my_choice',me.choice,'my_area',me.area,'my_player_id',me.id);
+ return jsonb_build_object('code',r.code,'phase',r.phase,'current_round',r.current_round,'total_rounds',r.total_rounds,'host_player_id',r.host_player_id,'dealer_player_id',r.dealer_player_id,'allocation_deadline',r.allocation_deadline,'choice_deadline',r.choice_deadline,'players',ps,'my_choice',me.choice,'my_area',me.area,'my_player_id',me.id);
 end $$;
 
 create or replace function public.start_game_round(p_code text,p_player_id uuid,p_token uuid)
@@ -74,7 +76,7 @@ begin
  select count(*) into n from game_players where room_code=r.code; if n<3 then raise exception '至少需要 3 位玩家'; end if;
  if r.phase not in ('lobby','results') then raise exception '目前回合尚未結束'; end if;
  if r.current_round>=n then raise exception '所有回合已完成，請重設整場'; end if;
- update game_rooms set phase='allocation',current_round=current_round+1,total_rounds=n,allocation_deadline=now()+interval '3 minutes',choice_deadline=null where code=r.code;
+ update game_rooms set phase='allocation',current_round=current_round+1,total_rounds=n,allocation_deadline=now()+interval '3 minutes',choice_deadline=null,dealer_player_id=(select id from game_players where room_code=r.code order by random() limit 1) where code=r.code;
  update game_players set area=null,choice=null where room_code=r.code;
  return jsonb_build_object('ok',true);
 end $$;
@@ -85,7 +87,7 @@ declare r game_rooms%rowtype;
 begin
  select * into r from game_rooms where code=upper(trim(p_code)) for update; if not found then raise exception '房間不存在'; end if;
  if not exists(select 1 from game_players where room_code=r.code and id=p_player_id and token=p_token) then raise exception '玩家驗證失敗'; end if;
- if r.host_player_id<>p_player_id then raise exception '只有房主／莊家可以分區'; end if;
+ if r.dealer_player_id<>p_player_id then raise exception '只有本回合莊家可以分區'; end if;
  if r.phase<>'allocation' then raise exception '現在不是分區階段'; end if;
  if p_area not in ('A','B') then raise exception '區域無效'; end if;
  update game_players set area=p_area where room_code=r.code and id=p_target_player_id; if not found then raise exception '找不到玩家'; end if;
@@ -98,7 +100,7 @@ declare r game_rooms%rowtype; n integer;
 begin
  select * into r from game_rooms where code=upper(trim(p_code)) for update; if not found then raise exception '房間不存在'; end if;
  if not exists(select 1 from game_players where room_code=r.code and id=p_player_id and token=p_token) then raise exception '玩家驗證失敗'; end if;
- if r.host_player_id<>p_player_id then raise exception '只有房主可以開始選擇'; end if;
+ if r.dealer_player_id<>p_player_id then raise exception '只有本回合莊家可以開始選擇'; end if;
  if r.phase<>'allocation' then raise exception '現在不是分區階段'; end if;
  if exists(select 1 from game_players where room_code=r.code and area is null) then raise exception '請先分配所有玩家'; end if;
  select count(*) into n from game_players where room_code=r.code;
@@ -121,7 +123,7 @@ declare r game_rooms%rowtype; a record; f integer; t integer;
 begin
  select * into r from game_rooms where code=upper(trim(p_code)) for update; if not found then raise exception '房間不存在'; end if;
  if not exists(select 1 from game_players where room_code=r.code and id=p_player_id and token=p_token) then raise exception '玩家驗證失敗'; end if;
- if r.host_player_id<>p_player_id then raise exception '只有房主可以結算'; end if;
+ if r.dealer_player_id<>p_player_id then raise exception '只有本回合莊家可以結算'; end if;
  if r.phase<>'choosing' then raise exception '現在不是選擇階段'; end if;
  if exists(select 1 from game_players where room_code=r.code and choice is null) and now()<r.choice_deadline then raise exception '仍有人尚未選擇'; end if;
  for a in select distinct area from game_players where room_code=r.code loop
@@ -148,6 +150,22 @@ begin
  return jsonb_build_object('ok',true);
 end $$;
 
+create or replace function public.kick_game_player(p_code text,p_player_id uuid,p_token uuid,p_target_player_id uuid)
+returns jsonb language plpgsql security definer set search_path=public,pg_temp as $
+declare r game_rooms%rowtype;
+begin
+ select * into r from game_rooms where code=upper(trim(p_code)) for update;
+ if not found then raise exception '房間不存在'; end if;
+ if not exists(select 1 from game_players where room_code=r.code and id=p_player_id and token=p_token) then raise exception '玩家驗證失敗'; end if;
+ if r.host_player_id<>p_player_id then raise exception '只有房主可以踢出玩家'; end if;
+ if r.phase not in ('lobby','results') then raise exception '遊戲進行中不能踢出玩家'; end if;
+ if p_target_player_id=r.host_player_id then raise exception '不能踢出房主'; end if;
+ delete from game_players where room_code=r.code and id=p_target_player_id;
+ if not found then raise exception '找不到玩家'; end if;
+ update game_rooms set total_rounds=(select count(*) from game_players where room_code=r.code) where code=r.code;
+ return jsonb_build_object('ok',true);
+end $;
+
 revoke all on all tables in schema public from anon,authenticated;
 grant usage on schema public to anon,authenticated;
 grant execute on function public.create_game_room(text,uuid) to anon,authenticated;
@@ -159,3 +177,4 @@ grant execute on function public.start_game_choices(text,uuid,uuid) to anon,auth
 grant execute on function public.submit_game_choice(text,uuid,uuid,text) to anon,authenticated;
 grant execute on function public.finish_game_round(text,uuid,uuid) to anon,authenticated;
 grant execute on function public.reset_game_room(text,uuid,uuid,boolean) to anon,authenticated;
+grant execute on function public.kick_game_player(text,uuid,uuid,uuid) to anon,authenticated;
