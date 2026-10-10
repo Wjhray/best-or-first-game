@@ -18,7 +18,7 @@
 <h3 style="margin-top:18px">🏆 公開總分</h3><div id="scoreBoard"></div></section>
 <p class="tiny" style="text-align:center">若連線失敗，請確認 SQL 設定已在 Supabase 執行完成，並確認填入的是正確專案 URL 與公開 key。</p>
 </main>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" onerror="this.onerror=null;this.src='https://unpkg.com/@supabase/supabase-js@2'"></script>
 <script>
 const $=id=>document.getElementById(id);let sb=null,room=null,me=null,poll=null,state=null,busy=false;
 const show=(id,yes)=>$(id).classList.toggle('hidden',!yes);
