@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《最棒的》還是《第一名》</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:680px;margin:24px auto;padding:16px;background:#fff8ed;color:#403642}
+main{background:white;border:3px solid #403642;border-radius:24px;padding:22px;box-shadow:5px 5px #403642}
+h1{font-size:clamp(26px,6vw,38px)}input,button{font:inherit;padding:11px;border:2px solid #403642;border-radius:12px;margin:4px}
+button{background:#ffd9e2;font-weight:700;cursor:pointer}.players{padding:0;list-style:none}.players li{padding:8px;border-bottom:1px dashed #bbb}
+</style><main><h1>🎲《最棒的》還是《第一名》</h1><p>可愛塗鴉風格遊戲原型</p><label>玩家名稱 <input id="name" placeholder="輸入名字"></label><button id="add">加入玩家 ＋</button><ul class="players" id="players"></ul><p id="count">目前 0 位玩家（至少 3 位才能開始）</p><button id="start" disabled>開始遊戲</button><p id="status">先加入至少 3 位玩家。</p></main>
+<script>
+const names=[];const nameInput=document.querySelector('#name');const list=document.querySelector('#players');const count=document.querySelector('#count');const start=document.querySelector('#start');const status=document.querySelector('#status');
+document.querySelector('#add').onclick=()=>{const n=nameInput.value.trim();if(n&&!names.includes(n)){names.push(n);const li=document.createElement('li');li.textContent='🐣 '+n;list.append(li);nameInput.value='';count.textContent='目前 '+names.length+' 位玩家（至少 3 位才能開始）';start.disabled=names.length<3}};
+start.onclick=()=>{status.textContent='已建立 '+names.length+' 位玩家。下一步將加入莊家輪替、A/B 分區、秘密選擇與計分。'};
+</script></html>
