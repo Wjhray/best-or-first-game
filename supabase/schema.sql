@@ -33,7 +33,7 @@ returns jsonb language plpgsql security definer set search_path=public,pg_temp a
 declare v_code text; v_token uuid:=gen_random_uuid();
 begin
  if p_nickname is null or char_length(trim(p_nickname)) not between 1 and 24 then raise exception '暱稱需為 1–24 個字元'; end if;
- loop v_code:=upper(substr(encode(gen_random_bytes(5),'hex'),1,6)); exit when not exists(select 1 from game_rooms where code=v_code); end loop;
+ loop v_code:=upper(substr(replace(gen_random_uuid()::text,'-',''),1,6)); exit when not exists(select 1 from game_rooms where code=v_code); end loop;
  insert into game_rooms(code,host_player_id) values(v_code,p_player_id);
  insert into game_players(id,room_code,token,nickname,seat_order) values(p_player_id,v_code,v_token,trim(p_nickname),1);
  return jsonb_build_object('code',v_code,'player_id',p_player_id,'token',v_token);
