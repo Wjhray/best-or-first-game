@@ -1,8 +1,6 @@
-// Supabase 前端公開設定範本
-// 請填入 Supabase Dashboard → Project Settings → API 的 Project URL
-// 以及 publishable key（舊介面可能標示 anon public key）。
-// 絕對不要填入 service_role、secret key 或資料庫密碼。
+// Supabase 前端公開設定
+// 這裡只放可公開使用的 Project URL 與 publishable key；不要放 secret/service_role。
 window.GAME_SUPABASE_CONFIG = {
-  url: "PASTE_YOUR_SUPABASE_PROJECT_URL_HERE",
-  publishableKey: "PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY_HERE"
+  url: "https://sqayzwpbdwhqvjilrlab.supabase.co",
+  publishableKey: "sb_publishable_78QKFS47tJOCXKsK-zU2_A_PlhrNa0q"
 };
