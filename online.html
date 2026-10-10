@@ -27,7 +27,24 @@ function err(e){return e?.message||String(e||'未知錯誤')}
 function setBusy(v){busy=v;['connect','create','join','startRound','beginChoices','finishRound','nextRound','fullReset'].forEach(id=>{if($(id))$(id).disabled=v})}
 function saved(){try{return JSON.parse(localStorage.getItem('bestfirst-supa')||'{}')}catch{return {}}}
 function saveConfig(url,key){localStorage.setItem('bestfirst-supa',JSON.stringify({url,key}))}
-async function connect(url,key){if(!window.supabase?.createClient)throw new Error('連線程式載入失敗，請重新整理網頁後再試。');if(!/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/i.test(url.trim()))throw new Error('Project URL 格式不正確，請從 Supabase 專案頁複製完整 URL。');if(!key.trim())throw new Error('請填入 publishable key 或 anon public key。');sb=window.supabase.createClient(url.trim().replace(/\/$/,''),key.trim(),{auth:{persistSession:false,autoRefreshToken:false}});const {error}=await sb.rpc('get_game_state',{p_code:'CHECK00',p_player_id:crypto.randomUUID(),p_token:crypto.randomUUID()});if(error&&!/房間不存在|玩家驗證失敗/i.test(error.message||''))throw error;saveConfig(url.trim().replace(/\/$/,''),key.trim());msg('connectStatus','已建立 Supabase 連線設定。請建立或加入房間。');show('lobbyPanel',true)}
+async function connect(url,key){
+ if(!window.supabase?.createClient)throw new Error('連線程式載入失敗：Supabase JS CDN 未載入。請重新整理網頁後再試。');
+ const cleanUrl=url.trim().replace(/\/$/,'');
+ if(!/^https:\/\/[a-z0-9-]+\.supabase\.co$/i.test(cleanUrl))throw new Error('Project URL 格式不正確，請從 Supabase 專案頁複製完整 URL。');
+ const cleanKey=key.trim();if(!cleanKey)throw new Error('請填入 publishable key 或 anon public key。');
+ sb=window.supabase.createClient(cleanUrl,cleanKey,{auth:{persistSession:false,autoRefreshToken:false}});
+ let result;
+ try { result=await sb.rpc('get_game_state',{p_code:'CHECK00',p_player_id:crypto.randomUUID(),p_token:crypto.randomUUID()}); }
+ catch(e) { if(e instanceof TypeError || /Load failed|Failed to fetch|NetworkError/i.test(e?.message||'')) throw new Error('瀏覽器無法完成 Supabase API 請求（網路或瀏覽器跨網域連線問題）。請改用 Safari 直接開啟本遊戲頁面，再按連線。'); throw e; }
+ const {error}=result||{};
+ if(error&&!/房間不存在|玩家驗證失敗/i.test(error.message||'')){
+   const m=error.message||'未知 API 錯誤';
+   if(/Invalid API key|No API key|JWT/i.test(m))throw new Error('Supabase 回報 API Key 無效。請從 Project Settings → API Keys 複製 publishable key。');
+   if(/function .*get_game_state|schema cache|Could not find the function/i.test(m))throw new Error('資料庫找不到 get_game_state 函式，需重新套用 supabase/schema.sql。原始訊息：'+m);
+   throw new Error('Supabase API 已回應，但連線檢查失敗：'+m);
+ }
+ saveConfig(cleanUrl,cleanKey);msg('connectStatus','連線成功！已收到 Supabase API 回應，可以建立或加入房間。');show('lobbyPanel',true)
+}
 $('connect').onclick=async()=>{try{setBusy(true);await connect($('url').value,$('key').value)}catch(e){msg('connectStatus','連線失敗：'+err(e));}finally{setBusy(false)}};
 $('forget').onclick=()=>{localStorage.removeItem('bestfirst-supa');$('url').value='';$('key').value='';sb=null;msg('connectStatus','已清除本裝置儲存的連線資訊。');show('lobbyPanel',false)};
 const cfg=saved();if(cfg.url){$('url').value=cfg.url;$('key').value=cfg.key||'';connect(cfg.url,cfg.key||'').catch(e=>msg('connectStatus','尚未連線：'+err(e)))}
