@@ -20,6 +20,7 @@
 <p class="tiny" style="text-align:center">若連線失敗，請確認 SQL 設定已在 Supabase 執行完成，並確認填入的是正確專案 URL 與公開 key。</p>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" onerror="this.onerror=null;this.src='https://unpkg.com/@supabase/supabase-js@2'"></script>
+<script src="./supabase-config.js"></script>
 <script>
 const $=id=>document.getElementById(id);let sb=null,room=null,me=null,poll=null,state=null,busy=false,refreshing=false,lastRenderSignature='';
 const show=(id,yes)=>$(id).classList.toggle('hidden',!yes);
@@ -48,7 +49,7 @@ async function connect(url,key){
 }
 $('connect').onclick=async()=>{try{setBusy(true);await connect($('url').value,$('key').value)}catch(e){msg('connectStatus','連線失敗：'+err(e));}finally{setBusy(false)}};
 $('forget').onclick=()=>{localStorage.removeItem('bestfirst-supa');$('url').value='';$('key').value='';sb=null;msg('connectStatus','已清除本裝置儲存的連線資訊。');show('lobbyPanel',false)};
-const cfg=saved();if(cfg.url){$('url').value=cfg.url;$('key').value=cfg.key||'';connect(cfg.url,cfg.key||'').catch(e=>msg('connectStatus','尚未連線：'+err(e)))}
+const cfg=saved();const defaults=window.GAME_SUPABASE_CONFIG||{};if(cfg.url){$('url').value=cfg.url;$('key').value=cfg.key||'';connect(cfg.url,cfg.key||'').catch(e=>msg('connectStatus','尚未連線：'+err(e)))}else{$('url').value=defaults.url||'';$('key').value=defaults.publishableKey||'';if(defaults.url&&defaults.publishableKey)msg('connectStatus','連線資料已預先填好。請按「連線並儲存於此裝置」開始。')}
 function playerId(){return crypto.randomUUID()}
 async function rpc(name,args){if(!sb)throw new Error('請先連接 Supabase。');const {data,error}=await sb.rpc(name,args);if(error)throw error;return data}
 async function enterRoom(data,nick){room=data.code;me={id:data.player_id,token:data.token,nickname:nick};lastRenderSignature='';state=null;sessionStorage.setItem('bestfirst-room',JSON.stringify({room,me}));$('roomCode').textContent=room;show('roomPanel',true);show('lobbyPanel',false);msg('roomNotice','房間已連接，正在同步狀態…');try{await refresh()}catch(e){msg('roomNotice','同步房間失敗：'+err(e))}if(poll)clearInterval(poll);poll=setInterval(()=>refresh().catch(e=>msg('roomNotice','同步失敗：'+err(e))),2200)}
