@@ -1,0 +1,14 @@
+{
+  "id": "./",
+  "name": "24發俄羅斯輪盤｜V10 手機單機版",
+  "short_name": "24發輪盤",
+  "description": "單機雙人、秘密裝填、重心物理模擬；首次載入後可離線遊玩。",
+  "lang": "zh-Hant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0c0a12",
+  "theme_color": "#100d19",
+  "icons": [{"src":"./icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
