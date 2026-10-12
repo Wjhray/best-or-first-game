@@ -1,4 +1,4 @@
-const CACHE = 'roulette-v10-pwa-1';
+const CACHE = 'roulette-v10-pwa-2';
 const ASSETS = ['./', './index.html', './manifest.json', './icons/icon.svg'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
