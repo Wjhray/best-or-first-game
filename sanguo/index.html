@@ -14,7 +14,7 @@
 <div id="setup" class="card stack">
 <h2>開啟你的一生</h2><div class="row mobile-col"><div><label class="muted">你的姓名</label><input id="name" maxlength="12" placeholder="例如：陳安"></div><div><label class="muted">遊戲模式</label><select id="mode"><option value="solo">個人世界｜只改變自己的人生</option><option value="multi">多人世界｜所有玩家共用一條歷史</option></select></div></div>
 <div id="worldField" class="hidden"><label class="muted">多人世界代碼（與朋友輸入相同代碼即可相遇）</label><input id="world" maxlength="12" value="HAN185" autocapitalize="characters"><div class="muted">多人模式共用世界人物狀態與歷史分歧：郭嘉若已病逝，後續任何玩家都不會再遇到活著的郭嘉；張飛若已被玩家殺死，該世界後續事件也不會再出現張飛參戰。</div></div>
-<div class="notice">原型規則：角色生於西元 170 年，遊戲從西元 185 年開始（角色 15 歲）。多人模式共用同一條世界歷史；單人模式則有自己的歷史分支。</div><button id="start" class="btn-gold full">踏入亂世</button><button id="continueSaved" class="full hidden">繼續上次人生</button><p id="savedGameSummary" class="muted hidden"></p></div>
+<div class="notice">原型規則：角色生於西元 170 年，遊戲從西元 185 年開始（角色 15 歲）。多人模式共用同一條世界歷史；單人模式則有自己的歷史分支。</div><button id="start" type="button" class="btn-gold full" onclick="startGame()" style="position:relative;z-index:2;touch-action:manipulation">踏入亂世</button><button id="continueSaved" class="full hidden">繼續上次人生</button><p id="savedGameSummary" class="muted hidden"></p></div>
 <div id="game" class="hidden">
 
 <section id="awayPanel" class="card hidden"><h2>角色已交由系統代管</h2><p id="awayDescription" class="muted">你的角色會依自身狀況繼續生活，個人數值與生活紀錄不會公開到天下局勢。</p><p class="notice">目前原型只會在這個網頁保持開啟時持續模擬；若關閉網頁，代管計時就會停止。要讓角色在關閉瀏覽器後仍持續生活，還需要後端定時服務。</p><button id="resumeGame" class="full">返回並接回角色</button></section>
