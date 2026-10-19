@@ -1,4 +1,4 @@
-const CACHE_NAME = "infection-game-shell-v1";
+const CACHE_NAME = "infection-game-shell-v2";
 const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg", "./apple-touch-icon.png"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
