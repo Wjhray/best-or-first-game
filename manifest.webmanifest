@@ -1,1 +1,32 @@
-{"name":"《最棒的》還是《第一名》","short_name":"最棒的還是第一名","start_url":"./","display":"standalone","background_color":"#fff9ef","theme_color":"#fff4e6","lang":"zh-Hant"}
+{
+  "id": "./online.html",
+  "name": "《最棒的》還是《第一名》",
+  "short_name": "最棒的還是第一名",
+  "description": "《最棒的》還是《第一名》線上多人房間版",
+  "start_url": "./online.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff9ef",
+  "theme_color": "#fff4e6",
+  "lang": "zh-Hant",
+  "icons": [
+    {
+      "src": "./icons/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
