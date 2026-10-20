@@ -6,268 +6,228 @@
 <meta name="theme-color" content="#102a43">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>台股時空交易所｜ETF 試玩版</title>
+<title>台股時空交易所｜個股年度模擬</title>
 <style>
 :root{--navy:#102a43;--navy2:#243b53;--paper:#f4f7fb;--white:#fff;--line:#d8e2ec;--text:#243b53;--muted:#627d98;--teal:#0f766e;--tealbg:#d9f3ee;--gold:#9a6700;--goldbg:#fff0c2;--red:#b42318;--redbg:#fee4e2;--blue:#e6f0ff;--shadow:0 8px 24px rgba(16,42,67,.08)}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}button,input{font:inherit}button{border:0;border-radius:13px;padding:13px 15px;font-weight:750;cursor:pointer;transition:transform .08s,opacity .15s}button:active{transform:scale(.985)}button:disabled{opacity:.45;cursor:not-allowed;transform:none}.primary{background:var(--teal);color:#fff}.secondary{background:#e7edf5;color:var(--navy)}.danger{background:var(--redbg);color:var(--red)}.app{max-width:930px;margin:0 auto;padding:clamp(12px,3vw,24px);padding-bottom:40px}.top{background:linear-gradient(135deg,var(--navy),#315d79);color:#fff;border-radius:23px;padding:22px;box-shadow:var(--shadow);margin-bottom:16px}.brand{font-size:12px;letter-spacing:.13em;opacity:.8;font-weight:800}.top h1{font-size:clamp(25px,6vw,36px);margin:7px 0 8px;line-height:1.15}.top p{margin:0;color:#e6edf5;line-height:1.5}.pills{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}.pill{font-size:12px;font-weight:750;border:1px solid #66849c;color:#f7fbff;background:#ffffff12;border-radius:999px;padding:6px 10px}.banner{border:1px solid #ead59a;background:var(--goldbg);color:#614700;border-radius:15px;padding:13px 15px;line-height:1.5;margin-bottom:16px;font-size:14px}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:16px}.stat,.panel{background:var(--white);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.stat{padding:14px;min-width:0}.stat .label{font-size:12px;color:var(--muted);margin-bottom:6px}.stat .value{font-weight:850;font-size:clamp(16px,3.7vw,24px);letter-spacing:-.02em;overflow-wrap:anywhere}.stat .hint{font-size:11px;color:var(--muted);margin-top:4px}.layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:14px;align-items:start}.panel{padding:17px;min-width:0;margin-bottom:14px}.panel h2{margin:0 0 12px;font-size:18px}.panel p{line-height:1.55}.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}.sectionhead h2{margin:0}.small-pill{font-size:11px;font-weight:800;border-radius:999px;padding:5px 8px;white-space:nowrap}.available{background:var(--tealbg);color:var(--teal)}.pending{background:#edf2f7;color:#52667a}.phase{background:var(--blue);border-radius:14px;padding:12px;margin-bottom:13px;line-height:1.5}.phase strong{display:block;font-size:16px;margin-bottom:3px}.phase span{font-size:13px;color:#385575}.tradeprice{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;padding:13px;border:1px solid var(--line);border-radius:14px;background:#f8fbff;margin-bottom:14px}.tradeprice .price{font-size:28px;font-weight:900;color:var(--navy);font-variant-numeric:tabular-nums}.tradeprice .sub{font-size:12px;color:var(--muted)}.qtylabel{display:block;font-size:13px;color:var(--muted);font-weight:700;margin:12px 0 6px}.qty{width:100%;border:1px solid #b6c7d8;border-radius:12px;padding:13px;background:#fff;color:var(--navy)}.btnrow{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.full{width:100%;margin-top:10px}.notice{font-size:12px;color:var(--muted);line-height:1.55;margin-top:12px}.returnbox{margin-top:13px;padding:13px;border-radius:14px;background:#eefaf7;border:1px solid #a7ded2;line-height:1.5}.returnbox .return{font-size:23px;font-weight:900;color:var(--teal)}.hidden{display:none!important}.asset-table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px;min-width:440px}th,td{padding:10px 8px;border-bottom:1px solid #e7edf3;text-align:left}th{font-size:11px;color:var(--muted);font-weight:800;background:#f8fafc}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}.asset{font-weight:800;color:var(--navy)}.code{font-size:11px;color:var(--muted);margin-top:3px}.state{font-size:11px;font-weight:800;color:var(--muted)}.history{display:flex;flex-direction:column;gap:7px}.historyitem{display:flex;justify-content:space-between;align-items:center;gap:9px;border:1px solid var(--line);padding:10px 11px;border-radius:12px;font-size:12px}.historyitem .left{min-width:0}.historyitem .left strong{display:block;font-size:13px}.historyitem .left span{color:var(--muted)}.positive{color:var(--teal);font-weight:850}.negative{color:var(--red);font-weight:850}.summarygrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.summarycell{border:1px solid var(--line);border-radius:12px;padding:12px;background:#f8fafc}.summarycell .label{font-size:12px;color:var(--muted)}.summarycell .value{font-size:18px;font-weight:850;margin-top:5px;overflow-wrap:anywhere}.footer{font-size:12px;color:var(--muted);line-height:1.6;text-align:center;margin-top:4px;padding:12px}@media(max-width:680px){.layout{grid-template-columns:1fr}.stats{gap:7px}.stat{padding:11px}.panel{padding:14px}.top{padding:19px}.tradeprice .price{font-size:25px}}@media(max-width:360px){.stats{grid-template-columns:1fr}.btnrow{grid-template-columns:1fr}.summarygrid{grid-template-columns:1fr}}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}button,input{font:inherit}button{border:0;border-radius:12px;padding:12px 14px;font-weight:750;cursor:pointer}button:active{transform:scale(.99)}button:disabled{opacity:.45;cursor:not-allowed}.primary{background:var(--teal);color:#fff}.secondary{background:#e7edf5;color:var(--navy)}.danger{background:var(--redbg);color:var(--red)}.app{max-width:1080px;margin:0 auto;padding:clamp(12px,3vw,24px);padding-bottom:40px}.top{background:linear-gradient(135deg,var(--navy),#315d79);color:#fff;border-radius:22px;padding:22px;box-shadow:var(--shadow);margin-bottom:15px}.brand{font-size:12px;letter-spacing:.13em;opacity:.8;font-weight:800}.top h1{font-size:clamp(25px,6vw,36px);margin:7px 0 8px;line-height:1.15}.top p{margin:0;color:#e6edf5;line-height:1.5}.pills{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}.pill{font-size:12px;font-weight:750;border:1px solid #66849c;color:#f7fbff;background:#ffffff12;border-radius:999px;padding:6px 10px}.banner{border:1px solid #ead59a;background:var(--goldbg);color:#614700;border-radius:14px;padding:12px 14px;line-height:1.55;margin-bottom:15px;font-size:13px}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-bottom:15px}.stat,.panel{background:var(--white);border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow)}.stat{padding:13px;min-width:0}.stat .label{font-size:12px;color:var(--muted);margin-bottom:6px}.stat .value{font-weight:850;font-size:clamp(16px,3.7vw,24px);letter-spacing:-.02em;overflow-wrap:anywhere}.stat .hint{font-size:11px;color:var(--muted);margin-top:4px}.layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(270px,.8fr);gap:14px;align-items:start}.panel{padding:16px;min-width:0;margin-bottom:14px}.panel h2{margin:0;font-size:18px}.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}.badge{font-size:11px;font-weight:800;border-radius:999px;padding:5px 8px;white-space:nowrap;background:var(--blue);color:#24476b}.phase{background:var(--blue);border-radius:13px;padding:12px;margin-bottom:12px;line-height:1.5}.phase strong{display:block;font-size:16px;margin-bottom:3px}.phase span{font-size:13px;color:#385575}.actionrow{display:grid;grid-template-columns:1fr 1fr;gap:8px}.full{width:100%;margin-top:9px}.notice{font-size:12px;color:var(--muted);line-height:1.55;margin-top:10px}.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:10px 7px;border-bottom:1px solid #e7edf3;text-align:left;vertical-align:middle}th{font-size:11px;color:var(--muted);font-weight:800;background:#f8fafc;white-space:nowrap}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.stockname{font-weight:800;color:var(--navy)}.code{font-size:11px;color:var(--muted);margin-top:3px}.muted{color:var(--muted)}.positive{color:var(--teal);font-weight:850}.negative{color:var(--red);font-weight:850}.qty{width:100%;border:1px solid #b6c7d8;border-radius:11px;padding:11px;background:#fff;color:var(--navy)}.qtylabel{display:block;font-size:12px;color:var(--muted);font-weight:750;margin:10px 0 5px}.tradebox{border:1px solid var(--line);border-radius:13px;padding:12px;margin-top:10px}.tradebox .selected{font-weight:850;font-size:15px}.history{display:flex;flex-direction:column;gap:7px}.historyitem{display:flex;justify-content:space-between;align-items:flex-start;gap:9px;border:1px solid var(--line);padding:10px;border-radius:11px;font-size:12px}.historyitem strong{display:block;font-size:13px;margin-bottom:3px}.summarygrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.summarycell{border:1px solid var(--line);border-radius:11px;padding:11px;background:#f8fafc}.summarycell .label{font-size:11px;color:var(--muted)}.summarycell .value{font-size:17px;font-weight:850;margin-top:5px;overflow-wrap:anywhere}.hidden{display:none!important}.footer{font-size:12px;color:var(--muted);line-height:1.6;text-align:center;margin-top:4px;padding:12px}.loading{padding:24px;text-align:center;color:var(--muted)}.rowbuttons{display:flex;gap:7px;flex-wrap:wrap}.rowbuttons button{flex:1}@media(max-width:760px){.layout{grid-template-columns:1fr}.panel{padding:13px}.top{padding:19px}.tablewrap table{min-width:620px}.stats{gap:7px}.stat{padding:10px}}@media(max-width:360px){.stats{grid-template-columns:1fr}.actionrow{grid-template-columns:1fr}.summarygrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="app">
 <header class="top">
-  <div class="brand">TAIWAN MARKET SIMULATOR · MOBILE PREVIEW</div>
+  <div class="brand">TAIWAN MARKET SIMULATOR · ANNUAL MODE</div>
   <h1>台股時空交易所</h1>
-  <p>先交易，再揭曉市場變動。每局隨機抽取 20 個年度，年份不會出現在玩家畫面。</p>
-  <div class="pills"><span class="pill">新台幣 1,000,000 元起</span><span class="pill">20 回合</span><span class="pill">隨機抽年、不重複</span><span class="pill">不需登入</span></div>
+  <p>從 1996 年底的起始股價出發，每回合推進一年。先決定交易，再結算當年度報酬。</p>
+  <div class="pills"><span class="pill">新台幣 1,000,000 元起</span><span class="pill">12 檔個股</span><span class="pill">1997–2021 年</span><span class="pill">手機可玩</span></div>
 </header>
 
-<div class="banner"><strong>目前是 ETF 機制試玩版。</strong>「1985 台灣一 ETF」使用你最新指定的 25 筆報酬率。12 檔個股的基準價格與年度報酬資料尚待核對，因此暫不開放交易，不使用虛構數據。預覽版暫不計手續費、交易稅與滑價，正式規則尚待確認。</div>
-
+<div class="banner" id="dataNotice"><strong>資料說明：</strong>遊戲使用起始股價與年度報酬率逐年計算，不需要逐年歷史收盤價。圖片提供的數值依原值使用；其他報酬率為目前候選資料，未宣稱已完成官方核對。</div>
 <div class="stats">
-  <div class="stat"><div class="label">可用現金</div><div class="value" id="cashStat">NT$1,000,000</div><div class="hint">交易後即時更新</div></div>
-  <div class="stat"><div class="label">ETF 持有單位</div><div class="value" id="sharesStat">0</div><div class="hint">只交易整數單位</div></div>
-  <div class="stat"><div class="label">總資產</div><div class="value" id="assetStat">NT$1,000,000</div><div class="hint">現金＋持倉市值</div></div>
+  <div class="stat"><div class="label">可用現金</div><div class="value" id="cashStat">讀取中…</div><div class="hint">買賣後即時更新</div></div>
+  <div class="stat"><div class="label">持股市值</div><div class="value" id="holdingStat">讀取中…</div><div class="hint">持股數量 × 最新股價</div></div>
+  <div class="stat"><div class="label">總資產</div><div class="value" id="assetStat">讀取中…</div><div class="hint">現金＋持股市值</div></div>
 </div>
 
 <div class="layout">
-  <div>
+  <main>
     <section class="panel">
-      <div class="sectionhead"><h2>📈 本輪交易</h2><span class="small-pill available" id="roundPill">尚未開始</span></div>
-      <div class="phase" id="phaseBox"><strong>準備好開始了嗎？</strong><span>按下「開始新局」後，系統會隨機抽出 20 個不同的年度順序；畫面不會顯示是哪一年。</span></div>
-      <div class="tradeprice"><div><div class="sub">1985 台灣一 ETF｜目前價格</div><div class="price" id="currentPrice">NT$40.00</div><div class="sub">不配發現金股息，報酬直接反映在價格</div></div><div style="text-align:right"><div class="sub">目前持倉市值</div><div style="font-weight:850;font-size:17px" id="holdingValue">NT$0</div></div></div>
-      <label class="qtylabel" for="qty">交易單位（整數）</label>
-      <input class="qty" id="qty" type="number" inputmode="numeric" min="1" step="1" value="100" aria-label="交易 ETF 單位數">
-      <div class="btnrow">
-        <button class="primary" id="buyBtn" disabled>買入 ETF</button>
-        <button class="danger" id="sellBtn" disabled>賣出 ETF</button>
+      <div class="sectionhead"><h2>📅 年度進度</h2><span class="badge" id="roundBadge">準備中</span></div>
+      <div class="phase" id="phaseBox"><strong>正在載入遊戲資料</strong><span>讀取 12 檔股票起始股價與年度報酬率。</span></div>
+      <div class="rowbuttons">
+        <button class="primary" id="advanceBtn" disabled>結算本年度並推進一年 →</button>
+        <button class="secondary" id="resetBtn" disabled>重新開始</button>
       </div>
-      <button class="secondary full" id="holdBtn" disabled>本輪持有觀望</button>
-      <button class="primary full hidden" id="revealBtn">揭曉本輪報酬 →</button>
-      <button class="secondary full hidden" id="nextBtn">進入下一輪 →</button>
-      <div id="actionMessage" class="notice" role="status" aria-live="polite">開始後，先決定買入、賣出或觀望；確認交易後才會揭曉當輪報酬。</div>
-      <div id="returnBox" class="returnbox hidden" aria-live="polite"></div>
+      <div id="actionMessage" class="notice" role="status" aria-live="polite">資料載入完成後即可交易。每回合先交易，再推進到下一年度。</div>
+      <div id="lastResult" class="tradebox hidden" aria-live="polite"></div>
     </section>
 
     <section class="panel">
-      <div class="sectionhead"><h2>🧾 本局交易紀錄</h2><span class="small-pill pending" id="tradeCountPill">0 筆交易</span></div>
-      <div id="history" class="history"><div class="notice">開始遊戲後，已結算的每一輪會記錄在這裡；不顯示歷史年份。</div></div>
-    </section>
-  </div>
-
-  <div>
-    <section class="panel">
-      <div class="sectionhead"><h2>🏦 可交易標的</h2><span class="small-pill pending">13 個標的規劃</span></div>
-      <div class="asset-table-wrap">
+      <div class="sectionhead"><h2>📈 股票市場</h2><span class="badge" id="marketBadge">12 檔個股</span></div>
+      <div class="tablewrap">
         <table>
-          <thead><tr><th>遊戲標的</th><th class="num">目前價格</th><th>狀態</th></tr></thead>
-          <tbody id="assetRows">
-            <tr><td><div class="asset">台灣一 ETF</div><div class="code">1985</div></td><td class="num">NT$40.00</td><td><span class="state" style="color:#0f766e">可交易測試</span></td></tr>
-            <tr><td><div class="asset">晶峰科技</div><div class="code">233</div></td><td class="num">—</td><td><span class="state">資料待核</span></td></tr>
-            <tr><td><div class="asset">南岳材料</div><div class="code">130</div></td><td class="num">—</td><td><span class="state">資料待核</span></td></tr>
-            <tr><td><div class="asset">鋼岳重工</div><div class="code">200</div></td><td class="num">—</td><td><span class="state">資料待核</span></td></tr>
-            <tr><td><div class="asset">櫻華生活</div><div class="code">991</div></td><td class="num">—</td><td><span class="state">資料待核</span></td></tr>
-            <tr><td><div class="asset">統盛食品</div><div class="code">121</div></td><td class="num">—</td><td><span class="state">資料待核</span></td></tr>
-            <tr><td><div class="asset">聲華電器</div><div class="code">160</div></td><td class="num">—</td><td><span class="state">資料待核</span></td></tr>
-            <tr><td><div class="asset">聯晶科技</div><div class="code">230</div></td><td class="num">—</td><td><span class="state">資料待核</span></td></tr>
-            <tr><td><div class="asset">葡康生技</div><div class="code">170</div></td><td class="num">—</td><td><span class="state">資料待核</span></td></tr>
-            <tr><td><div class="asset">第一金融</div><div class="code">289</div></td><td class="num">—</td><td><span class="state">資料待核</span></td></tr>
-            <tr><td><div class="asset">華馳汽車</div><div class="code">220</div></td><td class="num">—</td><td><span class="state">資料待核</span></td></tr>
-            <tr><td><div class="asset">國岳建設</div><div class="code">250</div></td><td class="num">—</td><td><span class="state">資料待核</span></td></tr>
-            <tr><td><div class="asset">大豐食品</div><div class="code">121-2</div></td><td class="num">—</td><td><span class="state">資料待核</span></td></tr>
-          </tbody>
+          <thead><tr><th>股票</th><th class="num">目前股價</th><th class="num">本年報酬率</th><th class="num">持有股數</th><th class="num">持股市值</th><th>操作</th></tr></thead>
+          <tbody id="stockRows"><tr><td colspan="6" class="loading">正在載入股票資料…</td></tr></tbody>
         </table>
       </div>
-      <p class="notice">遊戲畫面只顯示虛構名稱與遊戲代號。個股的歷史資料尚未驗收通過，因此目前不以佔位價開放交易。</p>
+      <p class="notice">操作以整數股為單位。每年結算時，所有股票依當年度報酬率同步變動。價格顯示至小數點後兩位。</p>
     </section>
 
     <section class="panel">
-      <div class="sectionhead"><h2>⚙️ 本局規則</h2></div>
-      <p style="font-size:13px;margin:0 0 9px">• 起始資金：NT$1,000,000</p>
-      <p style="font-size:13px;margin:0 0 9px">• ETF 起始價格：NT$40.00</p>
-      <p style="font-size:13px;margin:0 0 9px">• 從 25 個年度中抽 20 年，抽過的不重複</p>
-      <p style="font-size:13px;margin:0 0 9px">• 先交易，再揭曉報酬；每輪只顯示回合序號</p>
-      <p style="font-size:13px;margin:0">• ETF 不發現金股息，不重複加計股利現金</p>
-      <button class="secondary full" id="startBtn">開始新局</button>
-      <button class="secondary full" id="resetBtn" disabled>重新開始</button>
+      <div class="sectionhead"><h2>🧾 交易與年度紀錄</h2><span class="badge" id="recordBadge">0 筆紀錄</span></div>
+      <div id="history" class="history"><div class="notice">遊戲開始後，交易與年度結算會記錄在這裡。</div></div>
     </section>
-  </div>
+  </main>
+
+  <aside>
+    <section class="panel">
+      <div class="sectionhead"><h2>💹 下單交易</h2><span class="badge">先交易後結算</span></div>
+      <div class="tradebox">
+        <div class="muted" style="font-size:12px">目前選擇</div>
+        <div class="selected" id="selectedName">請從股票市場選擇股票</div>
+        <div class="muted" style="margin-top:5px;font-size:12px" id="selectedPrice">—</div>
+        <label class="qtylabel" for="qty">交易股數（整數）</label>
+        <input class="qty" id="qty" type="number" min="1" step="1" inputmode="numeric" value="100">
+        <div class="actionrow" style="margin-top:9px">
+          <button class="primary" id="buyBtn" disabled>買入</button>
+          <button class="danger" id="sellBtn" disabled>賣出</button>
+        </div>
+        <button class="secondary full" id="clearSelectionBtn">取消選擇</button>
+      </div>
+      <p class="notice">買入以目前股價扣除現金；賣出以目前股價增加現金。此版本暫不計手續費、交易稅與滑價。</p>
+    </section>
+
+    <section class="panel">
+      <div class="sectionhead"><h2>📋 遊戲規則</h2></div>
+      <p style="font-size:13px;line-height:1.55;margin:0 0 8px">• 起始資金：NT$1,000,000</p>
+      <p style="font-size:13px;line-height:1.55;margin:0 0 8px">• 基準股價：你提供的 1996 年底起始價</p>
+      <p style="font-size:13px;line-height:1.55;margin:0 0 8px">• 年度範圍：1997 年至 2021 年</p>
+      <p style="font-size:13px;line-height:1.55;margin:0 0 8px">• 每回合推進一年，12 檔股票同時套用該年報酬率</p>
+      <p style="font-size:13px;line-height:1.55;margin:0 0 8px">• 股價按上一年股價 ×（1＋年度報酬率）計算</p>
+      <p style="font-size:13px;line-height:1.55;margin:0">• 年度報酬率與起始價採用現有資料；候選值不代表已官方核實</p>
+    </section>
+  </aside>
 </div>
 
 <section class="panel hidden" id="finalPanel">
-  <div class="sectionhead"><h2>🏁 本局結算</h2><span class="small-pill available">20 回合完成</span></div>
+  <div class="sectionhead"><h2>🏁 最終結算</h2><span class="badge">2021 年底</span></div>
   <div class="summarygrid" id="summaryGrid"></div>
-  <p class="notice">大盤基準採與本局相同的年度報酬順序作比較；本試玩版的可交易標的只有 ETF，因此個股排行會在完整資料核驗後加入。</p>
-  <button class="primary full" id="playAgainBtn">再玩一局</button>
+  <h3 style="font-size:15px;margin:18px 0 8px">最終持股</h3>
+  <div class="tablewrap"><table><thead><tr><th>股票</th><th class="num">最終股價</th><th class="num">持有股數</th><th class="num">持股市值</th></tr></thead><tbody id="finalRows"></tbody></table></div>
+  <button class="primary full" id="playAgainBtn">重新開始新局</button>
 </section>
-
-<div class="footer">手機網頁試玩版｜資料參數由玩家指定，並不等同已獨立驗證的官方歷史報酬。未連接帳號、沒有後端，不蒐集遊戲內個人資料。</div>
+<div class="footer">手機網頁遊戲｜無須登入、不連接即時股市。年度報酬率用於遊戲模擬，不構成投資建議。</div>
 </div>
-
 <script>
 (function(){
-  "use strict";
-  const INITIAL_CASH = 1000000;
-  const INITIAL_PRICE = 40;
-  const TOTAL_ROUNDS = 20;
-  const returns = [
-    {year:1997,rate:0.1808},{year:1998,rate:-0.2160},{year:1999,rate:0.3163},
-    {year:2000,rate:-0.4385},{year:2001,rate:0.1702},{year:2002,rate:-0.1979},
-    {year:2003,rate:0.3230},{year:2004,rate:0.0423},{year:2005,rate:0.0666},
-    {year:2006,rate:0.1948},{year:2007,rate:0.0872},{year:2008,rate:-0.4603},
-    {year:2009,rate:0.7834},{year:2010,rate:0.0958},{year:2011,rate:-0.2118},
-    {year:2012,rate:0.0887},{year:2013,rate:0.1185},{year:2014,rate:0.0808},
-    {year:2015,rate:-0.1041},{year:2016,rate:0.1098},{year:2017,rate:0.1501},
-    {year:2018,rate:-0.0860},{year:2019,rate:0.2333},{year:2020,rate:0.2280},
-    {year:2021,rate:0.2366}
-  ];
-  const $ = function(id){return document.getElementById(id);};
-  let cash = INITIAL_CASH, price = INITIAL_PRICE, shares = 0, benchmarkPrice = INITIAL_PRICE;
-  let sequence = [], roundIndex = 0, phase = "idle", pendingAction = null, tradeCount = 0;
-  let history = [], roundStartAssets = INITIAL_CASH;
-
-  const money = function(n){return new Intl.NumberFormat("zh-TW",{style:"currency",currency:"TWD",maximumFractionDigits:2,minimumFractionDigits:0}).format(n);};
-  const priceFmt = function(n){return "NT$"+Number(n).toLocaleString("zh-TW",{minimumFractionDigits:2,maximumFractionDigits:2});};
-  const intFmt = function(n){return new Intl.NumberFormat("zh-TW",{maximumFractionDigits:0}).format(n);};
-  const pctFmt = function(n){return (n>=0?"+":"")+ (n*100).toFixed(2)+"%";};
-  const round2 = function(n){return Math.round((n+Number.EPSILON)*100)/100;};
-  const assets = function(){return round2(cash + shares*price);};
-  const shuffle = function(arr){
-    const copy = arr.slice();
-    for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=copy[i];copy[i]=copy[j];copy[j]=t;}
-    return copy;
-  };
-  function setMessage(msg){$("actionMessage").textContent=msg;}
-  function setPhase(title,detail){$("phaseBox").innerHTML="<strong>"+title+"</strong><span>"+detail+"</span>";}
-  function renderStats(){
-    $("cashStat").textContent=money(cash);
-    $("sharesStat").textContent=intFmt(shares);
-    $("assetStat").textContent=money(assets());
-    $("currentPrice").textContent=priceFmt(price);
-    $("holdingValue").textContent=money(shares*price);
-    $("tradeCountPill").textContent=tradeCount+" 筆交易";
-    const rows=$("assetRows");
-    if(rows.rows.length>0){rows.rows[0].cells[1].textContent=priceFmt(price);}
-  }
-  function renderHistory(){
-    const container=$("history");
-    if(!history.length){container.innerHTML='<div class="notice">開始遊戲後，已結算的每一輪會記錄在這裡；不顯示歷史年份。</div>';return;}
-    container.innerHTML=history.slice().reverse().map(function(h){
-      const c = h.rate>=0 ? "positive" : "negative";
-      const actionText = h.action==="buy" ? "買入 "+intFmt(h.qty)+" 單位" : h.action==="sell" ? "賣出 "+intFmt(h.qty)+" 單位" : "持有觀望";
-      return '<div class="historyitem"><div class="left"><strong>第 '+h.round+' 回合｜'+actionText+'</strong><span>結算價格 '+priceFmt(h.price)+'</span></div><div class="'+c+'">'+pctFmt(h.rate)+'</div></div>';
-    }).join("");
-  }
-  function renderControls(){
-    const trading = phase==="trade";
-    $("buyBtn").disabled=!trading;
-    $("sellBtn").disabled=!trading;
-    $("holdBtn").disabled=!trading;
-    $("qty").disabled=!trading;
-    $("startBtn").disabled=phase!=="idle" && phase!=="finished";
-    $("resetBtn").disabled=phase==="idle";
-    $("revealBtn").classList.toggle("hidden",phase!=="reveal");
-    $("nextBtn").classList.toggle("hidden",phase!=="advance");
-    $("roundPill").textContent=phase==="idle"?"尚未開始":phase==="finished"?"已結束":"第 "+(roundIndex+1)+" / "+TOTAL_ROUNDS+" 回合";
-  }
-  function beginGame(){
-    cash=INITIAL_CASH;price=INITIAL_PRICE;shares=0;benchmarkPrice=INITIAL_PRICE;
-    sequence=shuffle(returns).slice(0,TOTAL_ROUNDS);
-    roundIndex=0;phase="trade";pendingAction=null;tradeCount=0;history=[];roundStartAssets=INITIAL_CASH;
-    $("finalPanel").classList.add("hidden");
-    $("returnBox").classList.add("hidden");
-    $("returnBox").textContent="";
-    $("qty").value="100";
-    setPhase("第 1 回合｜請先決定交易","目前價格為 "+priceFmt(price)+"。本輪報酬尚未揭曉。");
-    setMessage("你可以買入、賣出，或選擇持有觀望。確認後才能揭曉本輪報酬。");
-    renderStats();renderHistory();renderControls();
-  }
-  function commitTrade(kind){
-    if(phase!=="trade")return;
-    const q = Number($("qty").value);
-    if(kind!=="hold" && (!Number.isInteger(q)||q<1)){setMessage("請輸入至少 1 單位的整數數量。");return;}
-    if(kind==="buy"){
-      const cost=round2(q*price);
-      if(cost>cash){setMessage("現金不足：需要 "+money(cost)+"，目前可用現金 "+money(cash)+"。");return;}
-      cash=round2(cash-cost);shares+=q;tradeCount++;
-      pendingAction={kind:"buy",qty:q};
-      setMessage("已按本輪揭曉前的價格買入 "+intFmt(q)+" 單位，共 "+money(cost)+"。下一步才揭曉市場報酬。");
-    }else if(kind==="sell"){
-      if(q>shares){setMessage("持有數量不足：目前只有 "+intFmt(shares)+" 單位。");return;}
-      const proceeds=round2(q*price);
-      cash=round2(cash+proceeds);shares-=q;tradeCount++;
-      pendingAction={kind:"sell",qty:q};
-      setMessage("已按本輪揭曉前的價格賣出 "+intFmt(q)+" 單位，收入 "+money(proceeds)+"。下一步才揭曉市場報酬。");
-    }else{
-      pendingAction={kind:"hold",qty:0};
-      setMessage("本輪選擇持有觀望，沒有交易。現在可以揭曉本輪市場報酬。");
-    }
-    phase="reveal";
-    setPhase("本輪交易已確認","交易已鎖定，未來報酬仍未顯示。");
-    renderStats();renderControls();
-  }
-  function revealReturn(){
-    if(phase!=="reveal")return;
-    const result=sequence[roundIndex];
-    const oldPrice=price;
-    price=round2(price*(1+result.rate));
-    benchmarkPrice=round2(benchmarkPrice*(1+result.rate));
-    const action=pendingAction||{kind:"hold",qty:0};
-    const rec={round:roundIndex+1,action:action.kind,qty:action.qty,rate:result.rate,price:price,oldPrice:oldPrice,cash:cash,shares:shares,assets:round2(cash+shares*price),benchmark:round2(INITIAL_CASH*benchmarkPrice/INITIAL_PRICE)};
-    history.push(rec);
-    $("returnBox").innerHTML='<div>第 '+(roundIndex+1)+' 回合市場報酬</div><div class="return '+(result.rate>=0?"positive":"negative")+'">'+pctFmt(result.rate)+'</div><div style="font-size:13px">ETF 價格：'+priceFmt(oldPrice)+' → <strong>'+priceFmt(price)+'</strong></div><div style="font-size:12px;color:#49675f;margin-top:5px">本輪資產：'+money(rec.assets)+'。只揭曉報酬，不顯示歷史年份。</div>';
-    $("returnBox").classList.remove("hidden");
-    roundStartAssets=rec.assets;
-    phase="advance";
-    setPhase("本輪已結算","可以檢視已揭曉的報酬，再前往下一回合。");
-    setMessage("本輪已結算。未來回合的報酬仍然隱藏。");
-    renderStats();renderHistory();renderControls();
-    if(roundIndex===TOTAL_ROUNDS-1){
-      $("nextBtn").textContent="查看最終結算";
-    }else{$("nextBtn").textContent="進入下一輪 →";}
-  }
-  function nextRound(){
-    if(phase!=="advance")return;
-    if(roundIndex>=TOTAL_ROUNDS-1){finishGame();return;}
-    roundIndex++;phase="trade";pendingAction=null;
-    $("returnBox").classList.add("hidden");
-    $("qty").value="100";
-    setPhase("第 "+(roundIndex+1)+" 回合｜請先決定交易","目前 ETF 價格為 "+priceFmt(price)+"。新一輪報酬尚未揭曉。");
-    setMessage("請先決定本輪交易。確認後才會揭曉本輪報酬。");
-    renderControls();
-  }
-  function finishGame(){
-    phase="finished";
-    const finalCash=cash,holding=round2(shares*price),finalAssets=round2(finalCash+holding);
-    const pnl=round2(finalAssets-INITIAL_CASH),ret=pnl/INITIAL_CASH;
-    const benchmark=round2(INITIAL_CASH*benchmarkPrice/INITIAL_PRICE);
-    const benchRet=benchmark/INITIAL_CASH-1;
-    const diff=finalAssets-benchmark;
-    $("summaryGrid").innerHTML=[
-      ["最終現金",money(finalCash)],
-      ["持倉市值",money(holding)],
-      ["最終總資產",money(finalAssets)],
-      ["總損益", (pnl>=0?"+":"")+money(pnl)],
-      ["累積報酬率",pctFmt(ret)],
-      ["買入／賣出次數",tradeCount+" 次"],
-      ["大盤基準（同序列）",money(benchmark)],
-      ["相對基準差額",(diff>=0?"+":"")+money(diff)]
-    ].map(function(x){return '<div class="summarycell"><div class="label">'+x[0]+'</div><div class="value">'+x[1]+'</div></div>';}).join("");
-    $("finalPanel").classList.remove("hidden");
-    setPhase("20 回合完成","本局結束。可以查看總資產與同年度序列的基準比較。");
-    setMessage("本局已完成；選擇「再玩一局」會重新抽取 20 個不重複年度。");
-    $("nextBtn").classList.add("hidden");
-    renderStats();renderControls();
-    $("finalPanel").scrollIntoView({behavior:"smooth",block:"start"});
-  }
-  $("buyBtn").addEventListener("click",function(){commitTrade("buy");});
-  $("sellBtn").addEventListener("click",function(){commitTrade("sell");});
-  $("holdBtn").addEventListener("click",function(){commitTrade("hold");});
-  $("revealBtn").addEventListener("click",revealReturn);
-  $("nextBtn").addEventListener("click",nextRound);
-  $("startBtn").addEventListener("click",beginGame);
-  $("playAgainBtn").addEventListener("click",function(){beginGame();window.scrollTo({top:0,behavior:"smooth"});});
-  $("resetBtn").addEventListener("click",function(){if(window.confirm("確定放棄目前進度並重新抽取 20 個年度嗎？"))beginGame();});
-  renderStats();renderControls();
+"use strict";
+const INITIAL_CASH=1000000, FIRST_YEAR=1997, LAST_YEAR=2021;
+const $=id=>document.getElementById(id);
+const money=n=>new Intl.NumberFormat("zh-TW",{style:"currency",currency:"TWD",maximumFractionDigits:0}).format(n);
+const priceFmt=n=>"NT$"+Number(n).toLocaleString("zh-TW",{minimumFractionDigits:2,maximumFractionDigits:2});
+const intFmt=n=>new Intl.NumberFormat("zh-TW",{maximumFractionDigits:0}).format(n);
+const pctFmt=n=>(n>=0?"+":"")+(n*100).toFixed(2)+"%";
+const round2=n=>Math.round((n+Number.EPSILON)*100)/100;
+function parseCSV(text){
+ const rows=[];let row=[],field="",quoted=false;
+ for(let i=0;i<text.length;i++){const c=text[i];if(quoted){if(c==='"'&&text[i+1]==='"'){field+='"';i++;}else if(c==='"')quoted=false;else field+=c;}else{if(c==='"')quoted=true;else if(c===','){row.push(field);field="";}else if(c==="\n"){row.push(field.replace(/\r$/,""));rows.push(row);row=[];field="";}else field+=c;}}
+ if(field.length||row.length){row.push(field.replace(/\r$/,""));rows.push(row);}
+ const headers=rows.shift()||[];
+ return rows.filter(r=>r.some(v=>v!=="")).map(r=>Object.fromEntries(headers.map((h,i)=>[h,r[i]??""])));
+}
+const state={stocks:[],year:FIRST_YEAR,cash:INITIAL_CASH,holdings:{},selected:null,phase:"loading",history:[],transactions:[],annualHistory:[]};
+function totalHoldingValue(){return round2(state.stocks.reduce((sum,s)=>sum+(state.holdings[s.ticker]||0)*s.price,0));}
+function totalAssets(){return round2(state.cash+totalHoldingValue());}
+function setMessage(msg){$("actionMessage").textContent=msg;}
+function setPhase(title,detail){$("phaseBox").innerHTML="<strong>"+title+"</strong><span>"+detail+"</span>";}
+function renderStats(){$("cashStat").textContent=money(state.cash);$("holdingStat").textContent=money(totalHoldingValue());$("assetStat").textContent=money(totalAssets());}
+function renderControls(){
+ const active=state.phase==="ready";
+ $("advanceBtn").disabled=!active;
+ $("buyBtn").disabled=!active||!state.selected;
+ $("sellBtn").disabled=!active||!state.selected;
+ $("qty").disabled=!active;
+ $("resetBtn").disabled=state.phase==="loading";
+ $("roundBadge").textContent=state.phase==="finished"?"遊戲完成":state.phase==="loading"?"載入中":state.phase==="ready"?"結算 "+state.year+" 年":"資料錯誤";
+ $("advanceBtn").textContent=state.year===LAST_YEAR?"結算 2021 年並完成遊戲 →":"結算 "+state.year+" 年並推進一年 →";
+ if(state.selected){const s=state.stocks.find(x=>x.ticker===state.selected);$("selectedName").textContent=s.gameName+"（"+s.gameCode+"）";$("selectedPrice").textContent=s.realName+"｜目前股價 "+priceFmt(s.price); }else{$("selectedName").textContent="請從股票市場選擇股票";$("selectedPrice").textContent="—";}
+}
+function renderStocks(){
+ const tbody=$("stockRows");
+ tbody.innerHTML=state.stocks.map(s=>{
+ const shares=state.holdings[s.ticker]||0,rate=s.returns[state.year];
+ const rateText=rate===undefined?'<span class="muted">缺少資料</span>':'<span class="muted">待結算</span>';
+ return '<tr><td><div class="stockname">'+s.gameName+'</div><div class="code">'+s.gameCode+'｜'+s.realName+'</div></td><td class="num">'+priceFmt(s.price)+'</td><td class="num">'+rateText+'</td><td class="num">'+intFmt(shares)+'</td><td class="num">'+money(shares*s.price)+'</td><td><button class="secondary selectBtn" data-ticker="'+s.ticker+'" style="padding:8px 10px;font-size:12px">'+(state.selected===s.ticker?'已選擇':'選擇')+'</button></td></tr>';
+ }).join("");
+ tbody.querySelectorAll(".selectBtn").forEach(btn=>btn.addEventListener("click",()=>{state.selected=btn.dataset.ticker;renderStocks();renderControls();}));
+ $("marketBadge").textContent=state.stocks.length+" 檔個股";
+}
+function renderHistory(){
+ const all=[...state.transactions,...state.annualHistory].sort((a,b)=>b.order-a.order);
+ $("recordBadge").textContent=all.length+" 筆紀錄";
+ if(!all.length){$("history").innerHTML='<div class="notice">尚無交易或年度結算紀錄。</div>';return;}
+ $("history").innerHTML=all.slice(0,40).map(x=>'<div class="historyitem"><div><strong>'+x.title+'</strong><span class="muted">'+x.detail+'</span></div><div class="'+(x.positive?"positive":x.negative?"negative":"")+'">'+x.value+'</div></div>').join("");
+}
+function trade(kind){
+ if(state.phase!=="ready"||!state.selected)return;
+ const s=state.stocks.find(x=>x.ticker===state.selected),q=Number($("qty").value);
+ if(!Number.isInteger(q)||q<1){setMessage("請輸入至少 1 股的整數數量。");return;}
+ if(kind==="buy"){
+  const cost=round2(q*s.price);
+  if(cost>state.cash){setMessage("現金不足：需要 "+money(cost)+"，目前現金 "+money(state.cash)+"。");return;}
+  state.cash=round2(state.cash-cost);state.holdings[s.ticker]=(state.holdings[s.ticker]||0)+q;
+  state.transactions.push({order:Date.now()+Math.random(),title:state.year+" 年｜買入 "+s.gameName,detail:"買入 "+intFmt(q)+" 股，成交參考價 "+priceFmt(s.price),value:"−"+money(cost),negative:true});
+  setMessage("已買入 "+s.gameName+" "+intFmt(q)+" 股。可以繼續交易，或結算本年度。");
+ }else{
+  const owned=state.holdings[s.ticker]||0;
+  if(q>owned){setMessage("持股不足：目前只有 "+intFmt(owned)+" 股 "+s.gameName+"。");return;}
+  const proceeds=round2(q*s.price);
+  state.cash=round2(state.cash+proceeds);state.holdings[s.ticker]=owned-q;
+  state.transactions.push({order:Date.now()+Math.random(),title:state.year+" 年｜賣出 "+s.gameName,detail:"賣出 "+intFmt(q)+" 股，成交參考價 "+priceFmt(s.price),value:"+"+money(proceeds),positive:true});
+  setMessage("已賣出 "+s.gameName+" "+intFmt(q)+" 股。可以繼續交易，或結算本年度。");
+ }
+ renderStats();renderStocks();renderHistory();renderControls();
+}
+function settleYear(){
+ if(state.phase!=="ready")return;
+ const year=state.year,results=[];
+ for(const s of state.stocks){
+  const rate=s.returns[year];
+  if(!Number.isFinite(rate)){setMessage("資料缺漏：目前有股票缺少 "+year+" 年報酬率。為避免錯誤計算，本年度未結算。");return;}
+  const old=s.price;s.price=round2(s.price*(1+rate));results.push({name:s.gameName,old,price:s.price,rate});
+ }
+ const portfolio=totalAssets();
+ const ups=results.filter(r=>r.rate>0).length,downs=results.filter(r=>r.rate<0).length;
+ state.annualHistory.push({order:Date.now()+Math.random(),title:year+" 年度結算完成",detail:"上漲 "+ups+" 檔、下跌 "+downs+" 檔｜現金 "+money(state.cash)+"｜持股市值 "+money(totalHoldingValue()),value:money(portfolio)});
+ $("lastResult").classList.remove("hidden");
+ $("lastResult").innerHTML='<div style="font-weight:850;margin-bottom:5px">'+year+' 年報酬已套用</div><div style="font-size:13px;line-height:1.6">12 檔股票依各自年度報酬率更新。上漲 '+ups+' 檔、下跌 '+downs+' 檔。<br>目前總資產：<strong>'+money(portfolio)+'</strong></div><div class="tablewrap" style="margin-top:8px"><table><thead><tr><th>股票</th><th class="num">本年報酬</th><th class="num">新股價</th></tr></thead><tbody>'+results.map(r=>'<tr><td>'+r.name+'</td><td class="num '+(r.rate>=0?'positive':'negative')+'">'+pctFmt(r.rate)+'</td><td class="num">'+priceFmt(r.price)+'</td></tr>').join("")+'</tbody></table></div>';
+ if(year===LAST_YEAR){state.phase="finished";setPhase("25 個年度全部完成","已完成 1997–2021 年逐年結算。可查看最終資產並重新開始。");setMessage("遊戲已完成。所有年度均依現有年度報酬率計算。");showFinal();}
+ else{state.year++;setPhase("已進入 "+state.year+" 年","可以在新年度繼續買賣，或再次結算並推進一年。");setMessage(year+" 年結算完成；目前已進入 "+state.year+" 年。");}
+ renderStats();renderStocks();renderHistory();renderControls();
+}
+function showFinal(){
+ const holdings=totalHoldingValue(),assets=totalAssets(),pnl=assets-INITIAL_CASH;
+ $("summaryGrid").innerHTML=[["起始資金",money(INITIAL_CASH)],["最終現金",money(state.cash)],["最終持股市值",money(holdings)],["最終總資產",money(assets)],["總損益",(pnl>=0?"+":"")+money(pnl)],["累計報酬率",pctFmt(pnl/INITIAL_CASH)],["交易筆數",state.transactions.length+" 筆"],["模擬年度","1997–2021（25 年）"]].map(x=>'<div class="summarycell"><div class="label">'+x[0]+'</div><div class="value">'+x[1]+'</div></div>').join("");
+ $("finalRows").innerHTML=state.stocks.map(s=>{const q=state.holdings[s.ticker]||0;return '<tr><td>'+s.gameName+' <span class="code">'+s.gameCode+'</span></td><td class="num">'+priceFmt(s.price)+'</td><td class="num">'+intFmt(q)+'</td><td class="num">'+money(q*s.price)+'</td></tr>';}).join("");
+ $("finalPanel").classList.remove("hidden");
+}
+function resetGame(){
+ state.year=FIRST_YEAR;state.cash=INITIAL_CASH;state.holdings={};state.selected=null;state.phase="ready";state.history=[];state.transactions=[];state.annualHistory=[];
+ for(const s of state.stocks)s.price=s.basePrice;
+ $("lastResult").classList.add("hidden");$("finalPanel").classList.add("hidden");$("qty").value="100";
+ setPhase("1997 年｜請開始交易","目前股價為你提供的 1996 年底起始價。先交易，再結算當年度報酬。");
+ setMessage("可以選擇股票下單，也可以直接結算本年度。");
+ renderStats();renderStocks();renderHistory();renderControls();
+}
+async function loadGame(){
+ try{
+  const [baseResponse,returnResponse]=await Promise.all([
+   fetch("../data/stock-candidates/stock_base_prices_candidates.csv",{cache:"no-store"}),
+   fetch("../data/stock-candidates/stock_annual_total_return_candidates.csv",{cache:"no-store"})
+  ]);
+  if(!baseResponse.ok||!returnResponse.ok)throw new Error("資料檔讀取失敗（HTTP "+baseResponse.status+" / "+returnResponse.status+"）。");
+  const baseRows=parseCSV(await baseResponse.text()),returnRows=parseCSV(await returnResponse.text());
+  const bases=new Map(baseRows.map(r=>[r.real_ticker,r]));
+  const returns=new Map();
+  for(const r of returnRows){if(!returns.has(r.real_ticker))returns.set(r.real_ticker,{});const n=Number(r.annual_total_return_decimal);if(r.annual_total_return_decimal!==""&&Number.isFinite(n))returns.get(r.real_ticker)[Number(r.year)]=n;}
+  const stocks=baseRows.map(b=>({ticker:b.real_ticker,realName:b.real_name,gameName:b.game_name,gameCode:b.game_code,basePrice:Number(b.base_close_ntd),price:Number(b.base_close_ntd),returns:returns.get(b.real_ticker)||{}}));
+  const invalid=stocks.filter(s=>!Number.isFinite(s.basePrice)||s.basePrice<=0);
+  const missing=[];
+  for(const s of stocks){for(let y=FIRST_YEAR;y<=LAST_YEAR;y++){if(!Number.isFinite(s.returns[y]))missing.push(s.gameName+" "+y);}}
+  if(invalid.length)throw new Error("起始股價缺漏："+invalid.map(s=>s.gameName).join("、"));
+  if(missing.length)throw new Error("年度報酬率缺漏："+missing.slice(0,8).join("、")+(missing.length>8?" 等，共 "+missing.length+" 筆":""));
+  state.stocks=stocks;resetGame();
+  $("dataNotice").innerHTML='<strong>資料已載入：</strong>12 檔股票起始價與 300 筆年度報酬率均有數值。51 筆採用你提供的圖片資料；其餘 249 筆保留現有候選值，未標示為官方核實。';
+ }catch(e){
+  state.phase="error";setPhase("資料載入失敗",e.message+" 請確認 GitHub Pages 部署完成後重新整理。");setMessage("目前無法開始，避免使用錯誤或虛構數值。");$("dataNotice").textContent="資料檔無法載入："+e.message;renderControls();
+ }
+}
+$("buyBtn").addEventListener("click",()=>trade("buy"));
+$("sellBtn").addEventListener("click",()=>trade("sell"));
+$("advanceBtn").addEventListener("click",settleYear);
+$("resetBtn").addEventListener("click",()=>{if(window.confirm("確定重新開始？目前現金、持股與紀錄將重設。"))resetGame();});
+$("clearSelectionBtn").addEventListener("click",()=>{state.selected=null;renderStocks();renderControls();});
+$("playAgainBtn").addEventListener("click",()=>{resetGame();window.scrollTo({top:0,behavior:"smooth"});});
+loadGame();
 })();
 </script>
 </body>
