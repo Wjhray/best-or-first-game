@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#102a43">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>台股時空交易所｜個股年度模擬</title>
+<title>台股時空交易所｜20 回合隨機年度版</title>
 <style>
 :root{--navy:#102a43;--navy2:#243b53;--paper:#f4f7fb;--white:#fff;--line:#d8e2ec;--text:#243b53;--muted:#627d98;--teal:#0f766e;--tealbg:#d9f3ee;--gold:#9a6700;--goldbg:#fff0c2;--red:#b42318;--redbg:#fee4e2;--blue:#e6f0ff;--shadow:0 8px 24px rgba(16,42,67,.08)}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}button,input{font:inherit}button{border:0;border-radius:12px;padding:12px 14px;font-weight:750;cursor:pointer}button:active{transform:scale(.99)}button:disabled{opacity:.45;cursor:not-allowed}.primary{background:var(--teal);color:#fff}.secondary{background:#e7edf5;color:var(--navy)}.danger{background:var(--redbg);color:var(--red)}.app{max-width:1080px;margin:0 auto;padding:clamp(12px,3vw,24px);padding-bottom:40px}.top{background:linear-gradient(135deg,var(--navy),#315d79);color:#fff;border-radius:22px;padding:22px;box-shadow:var(--shadow);margin-bottom:15px}.brand{font-size:12px;letter-spacing:.13em;opacity:.8;font-weight:800}.top h1{font-size:clamp(25px,6vw,36px);margin:7px 0 8px;line-height:1.15}.top p{margin:0;color:#e6edf5;line-height:1.5}.pills{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}.pill{font-size:12px;font-weight:750;border:1px solid #66849c;color:#f7fbff;background:#ffffff12;border-radius:999px;padding:6px 10px}.banner{border:1px solid #ead59a;background:var(--goldbg);color:#614700;border-radius:14px;padding:12px 14px;line-height:1.55;margin-bottom:15px;font-size:13px}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-bottom:15px}.stat,.panel{background:var(--white);border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow)}.stat{padding:13px;min-width:0}.stat .label{font-size:12px;color:var(--muted);margin-bottom:6px}.stat .value{font-weight:850;font-size:clamp(16px,3.7vw,24px);letter-spacing:-.02em;overflow-wrap:anywhere}.stat .hint{font-size:11px;color:var(--muted);margin-top:4px}.layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(270px,.8fr);gap:14px;align-items:start}.panel{padding:16px;min-width:0;margin-bottom:14px}.panel h2{margin:0;font-size:18px}.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}.badge{font-size:11px;font-weight:800;border-radius:999px;padding:5px 8px;white-space:nowrap;background:var(--blue);color:#24476b}.phase{background:var(--blue);border-radius:13px;padding:12px;margin-bottom:12px;line-height:1.5}.phase strong{display:block;font-size:16px;margin-bottom:3px}.phase span{font-size:13px;color:#385575}.actionrow{display:grid;grid-template-columns:1fr 1fr;gap:8px}.full{width:100%;margin-top:9px}.notice{font-size:12px;color:var(--muted);line-height:1.55;margin-top:10px}.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:10px 7px;border-bottom:1px solid #e7edf3;text-align:left;vertical-align:middle}th{font-size:11px;color:var(--muted);font-weight:800;background:#f8fafc;white-space:nowrap}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.stockname{font-weight:800;color:var(--navy)}.code{font-size:11px;color:var(--muted);margin-top:3px}.muted{color:var(--muted)}.positive{color:var(--teal);font-weight:850}.negative{color:var(--red);font-weight:850}.qty{width:100%;border:1px solid #b6c7d8;border-radius:11px;padding:11px;background:#fff;color:var(--navy)}.qtylabel{display:block;font-size:12px;color:var(--muted);font-weight:750;margin:10px 0 5px}.tradebox{border:1px solid var(--line);border-radius:13px;padding:12px;margin-top:10px}.tradebox .selected{font-weight:850;font-size:15px}.history{display:flex;flex-direction:column;gap:7px}.historyitem{display:flex;justify-content:space-between;align-items:flex-start;gap:9px;border:1px solid var(--line);padding:10px;border-radius:11px;font-size:12px}.historyitem strong{display:block;font-size:13px;margin-bottom:3px}.summarygrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.summarycell{border:1px solid var(--line);border-radius:11px;padding:11px;background:#f8fafc}.summarycell .label{font-size:11px;color:var(--muted)}.summarycell .value{font-size:17px;font-weight:850;margin-top:5px;overflow-wrap:anywhere}.hidden{display:none!important}.footer{font-size:12px;color:var(--muted);line-height:1.6;text-align:center;margin-top:4px;padding:12px}.loading{padding:24px;text-align:center;color:var(--muted)}.rowbuttons{display:flex;gap:7px;flex-wrap:wrap}.rowbuttons button{flex:1}@media(max-width:760px){.layout{grid-template-columns:1fr}.panel{padding:13px}.top{padding:19px}.tablewrap table{min-width:620px}.stats{gap:7px}.stat{padding:10px}}@media(max-width:360px){.stats{grid-template-columns:1fr}.actionrow{grid-template-columns:1fr}.summarygrid{grid-template-columns:1fr}}
@@ -17,11 +17,11 @@
 <header class="top">
   <div class="brand">TAIWAN MARKET SIMULATOR · ANNUAL MODE</div>
   <h1>台股時空交易所</h1>
-  <p>從 1996 年底的起始股價出發，每回合推進一年。先決定交易，再結算當年度報酬。</p>
-  <div class="pills"><span class="pill">新台幣 1,000,000 元起</span><span class="pill">12 檔個股</span><span class="pill">1997–2021 年</span><span class="pill">手機可玩</span></div>
+  <p>從 25 個歷史年度中隨機抽取 20 年。先交易，再揭曉當輪報酬；不公開抽中的年份。</p>
+  <div class="pills"><span class="pill">新台幣 1,000,000 元起</span><span class="pill">12 檔個股</span><span class="pill">25 年抽 20 年</span><span class="pill">手機可玩</span></div>
 </header>
 
-<div class="banner" id="dataNotice"><strong>資料說明：</strong>遊戲使用起始股價與年度報酬率逐年計算，不需要逐年歷史收盤價。圖片提供的數值依原值使用；其他報酬率為目前候選資料，未宣稱已完成官方核對。</div>
+<div class="banner" id="dataNotice"><strong>資料說明：</strong>維持原本 20 回合規則：每局從 1997–2021 年隨機抽取 20 個不重複年度，玩家交易後才揭曉該年度報酬率。圖片數值依原值使用；其他報酬率為現有候選資料。</div>
 <div class="stats">
   <div class="stat"><div class="label">可用現金</div><div class="value" id="cashStat">讀取中…</div><div class="hint">買賣後即時更新</div></div>
   <div class="stat"><div class="label">持股市值</div><div class="value" id="holdingStat">讀取中…</div><div class="hint">持股數量 × 最新股價</div></div>
@@ -34,7 +34,7 @@
       <div class="sectionhead"><h2>📅 年度進度</h2><span class="badge" id="roundBadge">準備中</span></div>
       <div class="phase" id="phaseBox"><strong>正在載入遊戲資料</strong><span>讀取 12 檔股票起始股價與年度報酬率。</span></div>
       <div class="rowbuttons">
-        <button class="primary" id="advanceBtn" disabled>結算本年度並推進一年 →</button>
+        <button class="primary" id="advanceBtn" disabled>開始新局</button>
         <button class="secondary" id="resetBtn" disabled>重新開始</button>
       </div>
       <div id="actionMessage" class="notice" role="status" aria-live="polite">資料載入完成後即可交易。每回合先交易，再推進到下一年度。</div>
@@ -71,7 +71,7 @@
           <button class="primary" id="buyBtn" disabled>買入</button>
           <button class="danger" id="sellBtn" disabled>賣出</button>
         </div>
-        <button class="secondary full" id="clearSelectionBtn">取消選擇</button>
+        <button class="secondary full" id="holdBtn" disabled>本輪持有觀望</button><button class="secondary full" id="clearSelectionBtn">取消選擇</button>
       </div>
       <p class="notice">買入以目前股價扣除現金；賣出以目前股價增加現金。此版本暫不計手續費、交易稅與滑價。</p>
     </section>
@@ -80,16 +80,16 @@
       <div class="sectionhead"><h2>📋 遊戲規則</h2></div>
       <p style="font-size:13px;line-height:1.55;margin:0 0 8px">• 起始資金：NT$1,000,000</p>
       <p style="font-size:13px;line-height:1.55;margin:0 0 8px">• 基準股價：你提供的 1996 年底起始價</p>
-      <p style="font-size:13px;line-height:1.55;margin:0 0 8px">• 年度範圍：1997 年至 2021 年</p>
-      <p style="font-size:13px;line-height:1.55;margin:0 0 8px">• 每回合推進一年，12 檔股票同時套用該年報酬率</p>
-      <p style="font-size:13px;line-height:1.55;margin:0 0 8px">• 股價按上一年股價 ×（1＋年度報酬率）計算</p>
+      <p style="font-size:13px;line-height:1.55;margin:0 0 8px">• 從 1997–2021 年抽取 20 個不重複年度</p>
+      <p style="font-size:13px;line-height:1.55;margin:0 0 8px">• 每回合先交易，再揭曉報酬；抽中年份不提前顯示</p>
+      <p style="font-size:13px;line-height:1.55;margin:0 0 8px">• 12 檔股票依抽中年度的報酬率同步調整股價</p>
       <p style="font-size:13px;line-height:1.55;margin:0">• 年度報酬率與起始價採用現有資料；候選值不代表已官方核實</p>
     </section>
   </aside>
 </div>
 
 <section class="panel hidden" id="finalPanel">
-  <div class="sectionhead"><h2>🏁 最終結算</h2><span class="badge">2021 年底</span></div>
+  <div class="sectionhead"><h2>🏁 最終結算</h2><span class="badge">20 回合完成</span></div>
   <div class="summarygrid" id="summaryGrid"></div>
   <h3 style="font-size:15px;margin:18px 0 8px">最終持股</h3>
   <div class="tablewrap"><table><thead><tr><th>股票</th><th class="num">最終股價</th><th class="num">持有股數</th><th class="num">持股市值</th></tr></thead><tbody id="finalRows"></tbody></table></div>
@@ -100,133 +100,127 @@
 <script>
 (function(){
 "use strict";
-const INITIAL_CASH=1000000, FIRST_YEAR=1997, LAST_YEAR=2021;
+const INITIAL_CASH=1000000,TOTAL_ROUNDS=20,FIRST_YEAR=1997,LAST_YEAR=2021;
 const $=id=>document.getElementById(id);
 const money=n=>new Intl.NumberFormat("zh-TW",{style:"currency",currency:"TWD",maximumFractionDigits:0}).format(n);
 const priceFmt=n=>"NT$"+Number(n).toLocaleString("zh-TW",{minimumFractionDigits:2,maximumFractionDigits:2});
 const intFmt=n=>new Intl.NumberFormat("zh-TW",{maximumFractionDigits:0}).format(n);
 const pctFmt=n=>(n>=0?"+":"")+(n*100).toFixed(2)+"%";
 const round2=n=>Math.round((n+Number.EPSILON)*100)/100;
-function parseCSV(text){
- const rows=[];let row=[],field="",quoted=false;
- for(let i=0;i<text.length;i++){const c=text[i];if(quoted){if(c==='"'&&text[i+1]==='"'){field+='"';i++;}else if(c==='"')quoted=false;else field+=c;}else{if(c==='"')quoted=true;else if(c===','){row.push(field);field="";}else if(c==="\n"){row.push(field.replace(/\r$/,""));rows.push(row);row=[];field="";}else field+=c;}}
- if(field.length||row.length){row.push(field.replace(/\r$/,""));rows.push(row);}
- const headers=rows.shift()||[];
- return rows.filter(r=>r.some(v=>v!=="")).map(r=>Object.fromEntries(headers.map((h,i)=>[h,r[i]??""])));
-}
-const state={stocks:[],year:FIRST_YEAR,cash:INITIAL_CASH,holdings:{},selected:null,phase:"loading",history:[],transactions:[],annualHistory:[]};
-function totalHoldingValue(){return round2(state.stocks.reduce((sum,s)=>sum+(state.holdings[s.ticker]||0)*s.price,0));}
-function totalAssets(){return round2(state.cash+totalHoldingValue());}
+function parseCSV(text){const rows=[];let row=[],field="",quoted=false;for(let i=0;i<text.length;i++){const c=text[i];if(quoted){if(c==='"'&&text[i+1]==='"'){field+='"';i++;}else if(c==='"')quoted=false;else field+=c;}else{if(c==='"')quoted=true;else if(c===','){row.push(field);field="";}else if(c==="\n"){row.push(field.replace(/\r$/,""));rows.push(row);row=[];field="";}else field+=c;}}if(field.length||row.length){row.push(field.replace(/\r$/,""));rows.push(row);}const headers=rows.shift()||[];return rows.filter(r=>r.some(v=>v!=="")).map(r=>Object.fromEntries(headers.map((h,i)=>[h,r[i]??""])));}
+function shuffle(arr){const a=arr.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+const state={stocks:[],sequence:[],roundIndex:0,cash:INITIAL_CASH,holdings:{},selected:null,phase:"loading",pendingAction:null,transactions:[],roundHistory:[],order:0};
+function holdingValue(){return round2(state.stocks.reduce((sum,s)=>sum+(state.holdings[s.ticker]||0)*s.price,0));}
+function totalAssets(){return round2(state.cash+holdingValue());}
 function setMessage(msg){$("actionMessage").textContent=msg;}
 function setPhase(title,detail){$("phaseBox").innerHTML="<strong>"+title+"</strong><span>"+detail+"</span>";}
-function renderStats(){$("cashStat").textContent=money(state.cash);$("holdingStat").textContent=money(totalHoldingValue());$("assetStat").textContent=money(totalAssets());}
+function renderStats(){$("cashStat").textContent=money(state.cash);$("holdingStat").textContent=money(holdingValue());$("assetStat").textContent=money(totalAssets());}
 function renderControls(){
- const active=state.phase==="ready";
- $("advanceBtn").disabled=!active;
- $("buyBtn").disabled=!active||!state.selected;
- $("sellBtn").disabled=!active||!state.selected;
- $("qty").disabled=!active;
- $("resetBtn").disabled=state.phase==="loading";
- $("roundBadge").textContent=state.phase==="finished"?"遊戲完成":state.phase==="loading"?"載入中":state.phase==="ready"?"結算 "+state.year+" 年":"資料錯誤";
- $("advanceBtn").textContent=state.year===LAST_YEAR?"結算 2021 年並完成遊戲 →":"結算 "+state.year+" 年並推進一年 →";
- if(state.selected){const s=state.stocks.find(x=>x.ticker===state.selected);$("selectedName").textContent=s.gameName+"（"+s.gameCode+"）";$("selectedPrice").textContent=s.realName+"｜目前股價 "+priceFmt(s.price); }else{$("selectedName").textContent="請從股票市場選擇股票";$("selectedPrice").textContent="—";}
+ const trading=state.phase==="trade",started=state.phase!=="idle"&&state.phase!=="loading"&&state.phase!=="error";
+ $("advanceBtn").disabled=!(["idle","reveal","next"].includes(state.phase));
+ $("buyBtn").disabled=!trading||!state.selected;
+ $("sellBtn").disabled=!trading||!state.selected;
+ $("holdBtn").disabled=!trading;
+ $("qty").disabled=!trading;
+ $("resetBtn").disabled=!started||state.phase==="finished";
+ $("roundBadge").textContent=state.phase==="finished"?"20 回合完成":state.phase==="idle"?"尚未開始":state.phase==="loading"?"載入中":"第 "+(state.roundIndex+1)+" / "+TOTAL_ROUNDS+" 回合";
+ if(state.phase==="idle")$("advanceBtn").textContent="開始新局";
+ if(state.phase==="reveal")$("advanceBtn").textContent="揭曉本輪報酬 →";
+ if(state.phase==="next")$("advanceBtn").textContent=state.roundIndex===TOTAL_ROUNDS-1?"查看最終結算":"進入下一輪 →";
+ if(state.phase==="finished")$("advanceBtn").textContent="本局已結束";
+ if(state.selected){const s=state.stocks.find(x=>x.ticker===state.selected);$("selectedName").textContent=s.gameName+"（"+s.gameCode+"）";$("selectedPrice").textContent=s.realName+"｜目前價格 "+priceFmt(s.price);}else{$("selectedName").textContent="請從股票市場選擇股票";$("selectedPrice").textContent="—";}
 }
 function renderStocks(){
- const tbody=$("stockRows");
- tbody.innerHTML=state.stocks.map(s=>{
- const shares=state.holdings[s.ticker]||0,rate=s.returns[state.year];
- const rateText=rate===undefined?'<span class="muted">缺少資料</span>':'<span class="muted">待結算</span>';
- return '<tr><td><div class="stockname">'+s.gameName+'</div><div class="code">'+s.gameCode+'｜'+s.realName+'</div></td><td class="num">'+priceFmt(s.price)+'</td><td class="num">'+rateText+'</td><td class="num">'+intFmt(shares)+'</td><td class="num">'+money(shares*s.price)+'</td><td><button class="secondary selectBtn" data-ticker="'+s.ticker+'" style="padding:8px 10px;font-size:12px">'+(state.selected===s.ticker?'已選擇':'選擇')+'</button></td></tr>';
- }).join("");
- tbody.querySelectorAll(".selectBtn").forEach(btn=>btn.addEventListener("click",()=>{state.selected=btn.dataset.ticker;renderStocks();renderControls();}));
+ $("stockRows").innerHTML=state.stocks.map(s=>{const q=state.holdings[s.ticker]||0;return '<tr><td><div class="stockname">'+s.gameName+'</div><div class="code">'+s.gameCode+'｜'+s.realName+'</div></td><td class="num">'+priceFmt(s.price)+'</td><td class="num"><span class="muted">'+(state.phase==="trade"?"尚未揭曉":state.phase==="idle"?"—":state.phase==="finished"?"已結算":"待揭曉")+'</span></td><td class="num">'+intFmt(q)+'</td><td class="num">'+money(q*s.price)+'</td><td><button class="secondary selectBtn" data-ticker="'+s.ticker+'" style="padding:8px 10px;font-size:12px">'+(state.selected===s.ticker?"已選擇":"選擇")+'</button></td></tr>';}).join("");
+ $("stockRows").querySelectorAll(".selectBtn").forEach(b=>b.addEventListener("click",()=>{if(state.phase!=="trade")return;state.selected=b.dataset.ticker;renderStocks();renderControls();}));
  $("marketBadge").textContent=state.stocks.length+" 檔個股";
 }
 function renderHistory(){
- const all=[...state.transactions,...state.annualHistory].sort((a,b)=>b.order-a.order);
+ const all=[...state.transactions,...state.roundHistory].sort((a,b)=>b.order-a.order);
  $("recordBadge").textContent=all.length+" 筆紀錄";
- if(!all.length){$("history").innerHTML='<div class="notice">尚無交易或年度結算紀錄。</div>';return;}
- $("history").innerHTML=all.slice(0,40).map(x=>'<div class="historyitem"><div><strong>'+x.title+'</strong><span class="muted">'+x.detail+'</span></div><div class="'+(x.positive?"positive":x.negative?"negative":"")+'">'+x.value+'</div></div>').join("");
+ $("history").innerHTML=all.length?all.slice(0,40).map(x=>'<div class="historyitem"><div><strong>'+x.title+'</strong><span class="muted">'+x.detail+'</span></div><div class="'+(x.positive?"positive":x.negative?"negative":"")+'">'+x.value+'</div></div>').join(""):'<div class="notice">開始遊戲後，交易與每輪結算會記錄在這裡。</div>';
 }
-function trade(kind){
- if(state.phase!=="ready"||!state.selected)return;
- const s=state.stocks.find(x=>x.ticker===state.selected),q=Number($("qty").value);
- if(!Number.isInteger(q)||q<1){setMessage("請輸入至少 1 股的整數數量。");return;}
- if(kind==="buy"){
-  const cost=round2(q*s.price);
-  if(cost>state.cash){setMessage("現金不足：需要 "+money(cost)+"，目前現金 "+money(state.cash)+"。");return;}
-  state.cash=round2(state.cash-cost);state.holdings[s.ticker]=(state.holdings[s.ticker]||0)+q;
-  state.transactions.push({order:Date.now()+Math.random(),title:state.year+" 年｜買入 "+s.gameName,detail:"買入 "+intFmt(q)+" 股，成交參考價 "+priceFmt(s.price),value:"−"+money(cost),negative:true});
-  setMessage("已買入 "+s.gameName+" "+intFmt(q)+" 股。可以繼續交易，或結算本年度。");
- }else{
-  const owned=state.holdings[s.ticker]||0;
-  if(q>owned){setMessage("持股不足：目前只有 "+intFmt(owned)+" 股 "+s.gameName+"。");return;}
-  const proceeds=round2(q*s.price);
-  state.cash=round2(state.cash+proceeds);state.holdings[s.ticker]=owned-q;
-  state.transactions.push({order:Date.now()+Math.random(),title:state.year+" 年｜賣出 "+s.gameName,detail:"賣出 "+intFmt(q)+" 股，成交參考價 "+priceFmt(s.price),value:"+"+money(proceeds),positive:true});
-  setMessage("已賣出 "+s.gameName+" "+intFmt(q)+" 股。可以繼續交易，或結算本年度。");
- }
- renderStats();renderStocks();renderHistory();renderControls();
-}
-function settleYear(){
- if(state.phase!=="ready")return;
- const year=state.year,results=[];
- for(const s of state.stocks){
-  const rate=s.returns[year];
-  if(!Number.isFinite(rate)){setMessage("資料缺漏：目前有股票缺少 "+year+" 年報酬率。為避免錯誤計算，本年度未結算。");return;}
-  const old=s.price;s.price=round2(s.price*(1+rate));results.push({name:s.gameName,old,price:s.price,rate});
- }
- const portfolio=totalAssets();
- const ups=results.filter(r=>r.rate>0).length,downs=results.filter(r=>r.rate<0).length;
- state.annualHistory.push({order:Date.now()+Math.random(),title:year+" 年度結算完成",detail:"上漲 "+ups+" 檔、下跌 "+downs+" 檔｜現金 "+money(state.cash)+"｜持股市值 "+money(totalHoldingValue()),value:money(portfolio)});
- $("lastResult").classList.remove("hidden");
- $("lastResult").innerHTML='<div style="font-weight:850;margin-bottom:5px">'+year+' 年報酬已套用</div><div style="font-size:13px;line-height:1.6">12 檔股票依各自年度報酬率更新。上漲 '+ups+' 檔、下跌 '+downs+' 檔。<br>目前總資產：<strong>'+money(portfolio)+'</strong></div><div class="tablewrap" style="margin-top:8px"><table><thead><tr><th>股票</th><th class="num">本年報酬</th><th class="num">新股價</th></tr></thead><tbody>'+results.map(r=>'<tr><td>'+r.name+'</td><td class="num '+(r.rate>=0?'positive':'negative')+'">'+pctFmt(r.rate)+'</td><td class="num">'+priceFmt(r.price)+'</td></tr>').join("")+'</tbody></table></div>';
- if(year===LAST_YEAR){state.phase="finished";setPhase("25 個年度全部完成","已完成 1997–2021 年逐年結算。可查看最終資產並重新開始。");setMessage("遊戲已完成。所有年度均依現有年度報酬率計算。");showFinal();}
- else{state.year++;setPhase("已進入 "+state.year+" 年","可以在新年度繼續買賣，或再次結算並推進一年。");setMessage(year+" 年結算完成；目前已進入 "+state.year+" 年。");}
- renderStats();renderStocks();renderHistory();renderControls();
-}
-function showFinal(){
- const holdings=totalHoldingValue(),assets=totalAssets(),pnl=assets-INITIAL_CASH;
- $("summaryGrid").innerHTML=[["起始資金",money(INITIAL_CASH)],["最終現金",money(state.cash)],["最終持股市值",money(holdings)],["最終總資產",money(assets)],["總損益",(pnl>=0?"+":"")+money(pnl)],["累計報酬率",pctFmt(pnl/INITIAL_CASH)],["交易筆數",state.transactions.length+" 筆"],["模擬年度","1997–2021（25 年）"]].map(x=>'<div class="summarycell"><div class="label">'+x[0]+'</div><div class="value">'+x[1]+'</div></div>').join("");
- $("finalRows").innerHTML=state.stocks.map(s=>{const q=state.holdings[s.ticker]||0;return '<tr><td>'+s.gameName+' <span class="code">'+s.gameCode+'</span></td><td class="num">'+priceFmt(s.price)+'</td><td class="num">'+intFmt(q)+'</td><td class="num">'+money(q*s.price)+'</td></tr>';}).join("");
- $("finalPanel").classList.remove("hidden");
-}
-function resetGame(){
- state.year=FIRST_YEAR;state.cash=INITIAL_CASH;state.holdings={};state.selected=null;state.phase="ready";state.history=[];state.transactions=[];state.annualHistory=[];
+function startGame(){
+ state.sequence=shuffle(Array.from({length:LAST_YEAR-FIRST_YEAR+1},(_,i)=>FIRST_YEAR+i)).slice(0,TOTAL_ROUNDS);
+ state.roundIndex=0;state.cash=INITIAL_CASH;state.holdings={};state.selected=null;state.phase="trade";state.pendingAction=null;state.transactions=[];state.roundHistory=[];state.order=0;
  for(const s of state.stocks)s.price=s.basePrice;
  $("lastResult").classList.add("hidden");$("finalPanel").classList.add("hidden");$("qty").value="100";
- setPhase("1997 年｜請開始交易","目前股價為你提供的 1996 年底起始價。先交易，再結算當年度報酬。");
- setMessage("可以選擇股票下單，也可以直接結算本年度。");
- renderStats();renderStocks();renderHistory();renderControls();
+ setPhase("第 1 / 20 回合｜請先交易","本輪市場報酬尚未揭曉。你可以選擇一檔股票買入或賣出，也可以觀望。");
+ setMessage("本局已開始。每回合只可先選擇一次買入、賣出或觀望；確認後才能揭曉報酬。");
+ renderAll();
 }
+function renderAll(){renderStats();renderStocks();renderHistory();renderControls();}
+function commitTrade(kind){
+ if(state.phase!=="trade")return;
+ if(kind!=="hold"&&!state.selected){setMessage("請先從股票市場選擇一檔股票。");return;}
+ const s=state.stocks.find(x=>x.ticker===state.selected),q=Number($("qty").value);
+ if(kind!=="hold"&&(!Number.isInteger(q)||q<1)){setMessage("請輸入至少 1 股的整數數量。");return;}
+ if(kind==="buy"){
+  const cost=round2(q*s.price);if(cost>state.cash){setMessage("現金不足：需要 "+money(cost)+"，目前現金 "+money(state.cash)+"。");return;}
+  state.cash=round2(state.cash-cost);state.holdings[s.ticker]=(state.holdings[s.ticker]||0)+q;
+  state.transactions.push({order:++state.order,title:"第 "+(state.roundIndex+1)+" 回合｜買入 "+s.gameName,detail:"買入 "+intFmt(q)+" 股，成交參考價 "+priceFmt(s.price),value:"−"+money(cost),negative:true});
+  state.pendingAction={kind:"buy",name:s.gameName,qty:q};
+  setMessage("已買入 "+s.gameName+" "+intFmt(q)+" 股。本輪交易已鎖定，接著揭曉市場報酬。");
+ }else if(kind==="sell"){
+  const owned=state.holdings[s.ticker]||0;if(q>owned){setMessage("持股不足：目前只有 "+intFmt(owned)+" 股 "+s.gameName+"。");return;}
+  const proceeds=round2(q*s.price);state.cash=round2(state.cash+proceeds);state.holdings[s.ticker]=owned-q;
+  state.transactions.push({order:++state.order,title:"第 "+(state.roundIndex+1)+" 回合｜賣出 "+s.gameName,detail:"賣出 "+intFmt(q)+" 股，成交參考價 "+priceFmt(s.price),value:"+"+money(proceeds),positive:true};
+  state.pendingAction={kind:"sell",name:s.gameName,qty:q};
+  setMessage("已賣出 "+s.gameName+" "+intFmt(q)+" 股。本輪交易已鎖定，接著揭曉市場報酬。");
+ }else{
+  state.pendingAction={kind:"hold",name:"",qty:0};setMessage("本輪選擇持有觀望，沒有交易。接著揭曉市場報酬。");
+ }
+ state.phase="reveal";setPhase("交易已確認｜等待揭曉","本輪交易已鎖定，尚未顯示抽中的歷史年度與報酬。");renderAll();
+}
+function revealRound(){
+ if(state.phase!=="reveal")return;
+ const year=state.sequence[state.roundIndex],changes=[];
+ for(const s of state.stocks){const rate=s.returns[year];const old=s.price;s.price=round2(s.price*(1+rate));changes.push({name:s.gameName,old,price:s.price,rate});}
+ const pnl=totalAssets()-INITIAL_CASH;
+ const ups=changes.filter(x=>x.rate>0).length,downs=changes.filter(x=>x.rate<0).length;
+ state.roundHistory.push({order:++state.order,title:"第 "+(state.roundIndex+1)+" 回合｜市場已揭曉",detail:"歷史年度 "+year+"｜上漲 "+ups+" 檔、下跌 "+downs+" 檔｜總資產 "+money(totalAssets()),value:(pnl>=0?"+":"")+money(pnl),positive:pnl>=0,negative:pnl<0});
+ $("lastResult").classList.remove("hidden");
+ $("lastResult").innerHTML='<div style="font-weight:850;margin-bottom:5px">第 '+(state.roundIndex+1)+' 回合市場報酬已揭曉</div><div style="font-size:13px;line-height:1.6">抽中歷史年度：<strong>'+year+' 年</strong><br>本年度上漲 '+ups+' 檔、下跌 '+downs+' 檔。<br>目前總資產：<strong>'+money(totalAssets())+'</strong></div><div class="tablewrap" style="margin-top:8px"><table><thead><tr><th>股票</th><th class="num">本輪報酬</th><th class="num">更新股價</th></tr></thead><tbody>'+changes.map(x=>'<tr><td>'+x.name+'</td><td class="num '+(x.rate>=0?"positive":"negative")+'">'+pctFmt(x.rate)+'</td><td class="num">'+priceFmt(x.price)+'</td></tr>').join("")+'</tbody></table></div>';
+ state.phase="next";state.pendingAction=null;setPhase("本輪結算完成","已揭曉本輪報酬。按下下一輪後，系統會繼續使用本局預先隨機抽取的另一個年度。");
+ setMessage("第 "+(state.roundIndex+1)+" 回合結算完成。下一回合仍會先交易，之後才揭曉報酬。");renderAll();
+}
+function nextRound(){
+ if(state.phase!=="next")return;
+ if(state.roundIndex>=TOTAL_ROUNDS-1){finishGame();return;}
+ state.roundIndex++;state.phase="trade";state.selected=null;state.pendingAction=null;$("lastResult").classList.add("hidden");$("qty").value="100";
+ setPhase("第 "+(state.roundIndex+1)+" / 20 回合｜請先交易","本輪市場報酬尚未揭曉。選擇買入、賣出或觀望。");
+ setMessage("新回合開始。歷史年份及報酬會在本輪交易確認後才揭曉。");renderAll();
+}
+function finishGame(){
+ state.phase="finished";const holdings=holdingValue(),assets=totalAssets(),pnl=assets-INITIAL_CASH;
+ $("summaryGrid").innerHTML=[["起始資金",money(INITIAL_CASH)],["最終現金",money(state.cash)],["最終持股市值",money(holdings)],["最終總資產",money(assets)],["總損益",(pnl>=0?"+":"")+money(pnl)],["累計報酬率",pctFmt(pnl/INITIAL_CASH)],["交易筆數",state.transactions.length+" 筆"],["已完成回合",TOTAL_ROUNDS+" / "+TOTAL_ROUNDS]].map(x=>'<div class="summarycell"><div class="label">'+x[0]+'</div><div class="value">'+x[1]+'</div></div>').join("");
+ $("finalRows").innerHTML=state.stocks.map(s=>{const q=state.holdings[s.ticker]||0;return '<tr><td>'+s.gameName+' <span class="code">'+s.gameCode+'</span></td><td class="num">'+priceFmt(s.price)+'</td><td class="num">'+intFmt(q)+'</td><td class="num">'+money(q*s.price)+'</td></tr>';}).join("");
+ $("finalPanel").classList.remove("hidden");setPhase("20 回合完成","本局已完成。可查看最終資產，或重新開始並抽取另一組 20 個不重複年度。");setMessage("本局結束。每局抽取的 20 個年度不重複；重新開始會重新隨機抽年。");renderAll();$("advanceBtn").disabled=true;$("advanceBtn").textContent="本局已結束";$("finalPanel").scrollIntoView({behavior:"smooth",block:"start"});
+}
+function renderControlsAfterLoad(){renderControls();}
 async function loadGame(){
  try{
-  const [baseResponse,returnResponse]=await Promise.all([
-   fetch("../data/stock-candidates/stock_base_prices_candidates.csv",{cache:"no-store"}),
-   fetch("../data/stock-candidates/stock_annual_total_return_candidates.csv",{cache:"no-store"})
-  ]);
-  if(!baseResponse.ok||!returnResponse.ok)throw new Error("資料檔讀取失敗（HTTP "+baseResponse.status+" / "+returnResponse.status+"）。");
-  const baseRows=parseCSV(await baseResponse.text()),returnRows=parseCSV(await returnResponse.text());
-  const bases=new Map(baseRows.map(r=>[r.real_ticker,r]));
-  const returns=new Map();
-  for(const r of returnRows){if(!returns.has(r.real_ticker))returns.set(r.real_ticker,{});const n=Number(r.annual_total_return_decimal);if(r.annual_total_return_decimal!==""&&Number.isFinite(n))returns.get(r.real_ticker)[Number(r.year)]=n;}
-  const stocks=baseRows.map(b=>({ticker:b.real_ticker,realName:b.real_name,gameName:b.game_name,gameCode:b.game_code,basePrice:Number(b.base_close_ntd),price:Number(b.base_close_ntd),returns:returns.get(b.real_ticker)||{}}));
-  const invalid=stocks.filter(s=>!Number.isFinite(s.basePrice)||s.basePrice<=0);
-  const missing=[];
-  for(const s of stocks){for(let y=FIRST_YEAR;y<=LAST_YEAR;y++){if(!Number.isFinite(s.returns[y]))missing.push(s.gameName+" "+y);}}
-  if(invalid.length)throw new Error("起始股價缺漏："+invalid.map(s=>s.gameName).join("、"));
-  if(missing.length)throw new Error("年度報酬率缺漏："+missing.slice(0,8).join("、")+(missing.length>8?" 等，共 "+missing.length+" 筆":""));
-  state.stocks=stocks;resetGame();
-  $("dataNotice").innerHTML='<strong>資料已載入：</strong>12 檔股票起始價與 300 筆年度報酬率均有數值。51 筆採用你提供的圖片資料；其餘 249 筆保留現有候選值，未標示為官方核實。';
- }catch(e){
-  state.phase="error";setPhase("資料載入失敗",e.message+" 請確認 GitHub Pages 部署完成後重新整理。");setMessage("目前無法開始，避免使用錯誤或虛構數值。");$("dataNotice").textContent="資料檔無法載入："+e.message;renderControls();
- }
+  const [br,rr]=await Promise.all([fetch("../data/stock-candidates/stock_base_prices_candidates.csv",{cache:"no-store"}),fetch("../data/stock-candidates/stock_annual_total_return_candidates.csv",{cache:"no-store"})]);
+  if(!br.ok||!rr.ok)throw new Error("資料檔讀取失敗。");
+  const bases=parseCSV(await br.text()),returns=parseCSV(await rr.text()),retMap=new Map();
+  for(const r of returns){if(!retMap.has(r.real_ticker))retMap.set(r.real_ticker,{});const v=Number(r.annual_total_return_decimal);if(r.annual_total_return_decimal!==""&&Number.isFinite(v))retMap.get(r.real_ticker)[Number(r.year)]=v;}
+  state.stocks=bases.map(b=>({ticker:b.real_ticker,realName:b.real_name,gameName:b.game_name,gameCode:b.game_code,basePrice:Number(b.base_close_ntd),price:Number(b.base_close_ntd),returns:retMap.get(b.real_ticker)||{}}));
+  const bad=state.stocks.filter(s=>!Number.isFinite(s.basePrice)||s.basePrice<=0);
+  const missing=[];for(const s of state.stocks)for(let y=FIRST_YEAR;y<=LAST_YEAR;y++)if(!Number.isFinite(s.returns[y]))missing.push(s.gameName+" "+y);
+  if(bad.length)throw new Error("起始股價缺漏："+bad.map(s=>s.gameName).join("、"));
+  if(missing.length)throw new Error("年度報酬率缺漏："+missing.slice(0,6).join("、"));
+  state.phase="idle";setPhase("準備開始新局","按下「開始新局」後，隨機抽取 20 個不同年度；不會提前顯示年份。");setMessage("遊戲資料已載入。規則維持 20 回合、25 年隨機抽 20 年、每回合先交易後揭曉。");
+  $("dataNotice").innerHTML="<strong>資料已載入：</strong>12 檔起始價與 300 筆年度報酬率均有數值。51 筆依你提供的圖片使用；其餘 249 筆為現有候選值。";
+  renderAll();
+ }catch(e){state.phase="error";setPhase("資料載入失敗",e.message);setMessage("無法開始，避免使用錯誤或虛構數值。");$("dataNotice").textContent="資料檔無法載入："+e.message;renderControlsAfterLoad();}
 }
-$("buyBtn").addEventListener("click",()=>trade("buy"));
-$("sellBtn").addEventListener("click",()=>trade("sell"));
-$("advanceBtn").addEventListener("click",settleYear);
-$("resetBtn").addEventListener("click",()=>{if(window.confirm("確定重新開始？目前現金、持股與紀錄將重設。"))resetGame();});
+$("buyBtn").addEventListener("click",()=>commitTrade("buy"));
+$("sellBtn").addEventListener("click",()=>commitTrade("sell"));
+$("holdBtn").addEventListener("click",()=>commitTrade("hold"));
+$("advanceBtn").addEventListener("click",()=>{if(state.phase==="idle")startGame();else if(state.phase==="reveal")revealRound();else if(state.phase==="next")nextRound();});
+$("resetBtn").addEventListener("click",()=>{if(window.confirm("確定放棄目前進度並重新抽取 20 個年度嗎？"))startGame();});
 $("clearSelectionBtn").addEventListener("click",()=>{state.selected=null;renderStocks();renderControls();});
-$("playAgainBtn").addEventListener("click",()=>{resetGame();window.scrollTo({top:0,behavior:"smooth"});});
+$("playAgainBtn").addEventListener("click",()=>{startGame();window.scrollTo({top:0,behavior:"smooth"});});
 loadGame();
 })();
 </script>
