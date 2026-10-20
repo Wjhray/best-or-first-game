@@ -15,12 +15,12 @@
 .market-scroll th,.market-scroll td{padding:10px 9px}
 .market-scroll th{font-size:12px}
 .market-scroll td{font-size:15px}
-.stock-open{display:block;appearance:none;border:0;background:transparent;padding:0;margin:0;border-radius:0;color:var(--navy);font-weight:900;font-size:17px;line-height:1.22;text-align:left;width:100%;white-space:normal}
+.stock-open{display:block;appearance:none;-webkit-appearance:none;touch-action:manipulation;position:relative;z-index:1;border:0;background:transparent;padding:8px 4px;margin:-8px -4px;border-radius:0;color:var(--navy);font-weight:900;font-size:17px;line-height:1.22;text-align:left;width:calc(100% + 8px);white-space:normal;cursor:pointer;pointer-events:auto}
 .stock-open:focus-visible{outline:3px solid #0f766e;outline-offset:3px;border-radius:4px}
 .stock-open .code{display:block;font-size:12px;font-weight:700;color:var(--muted);margin-top:4px}
 .market-hint{font-size:12px!important;margin:5px 0 0!important}
-.modal-backdrop{position:fixed;inset:0;z-index:9999;background:rgba(4,17,31,.68);display:grid;place-items:center;padding:16px;overflow-y:auto}
-.modal-backdrop.hidden{display:none!important}
+.modal-backdrop{position:fixed;inset:0;z-index:2147483000;background:rgba(4,17,31,.68);display:grid;place-items:center;padding:16px;overflow-y:auto}
+.modal-backdrop.hidden{display:none!important}.modal-backdrop:not(.hidden){display:grid!important;position:fixed!important;inset:0!important;z-index:2147483000!important}
 .trade-modal{width:min(100%,430px);max-height:min(92svh,740px);overflow-y:auto;background:#fff;border-radius:20px;padding:18px;box-shadow:0 18px 60px rgba(0,0,0,.3);border:1px solid #d8e2ec}
 .modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:13px}
 .modal-head h2{font-size:24px;line-height:1.2;margin:0}
@@ -183,18 +183,15 @@ function syncEstimate(){
  if($("sellBtn"))$("sellBtn").disabled=state.phase!=="trade"||!s||!q||q>(state.holdings[s.ticker]||0);
 }
 function openTradeModal(ticker){
- // 初始畫面尚未開始時，點選標的名稱會自動開始一局並立即開啟下單視窗。
  if(state.phase==="idle")startGame();
  if(state.phase!=="trade"){
-  const message=state.phase==="loading"?"遊戲資料尚在載入，請稍等片刻。":state.phase==="reveal"||state.phase==="next"?"請先完成本輪揭曉／結算，再進行下一輪交易。":state.phase==="finished"?"本局已結束，請按「重新開始新局」後再交易。":"目前無法交易，請確認遊戲資料已載入。";
+  const message=state.phase==="loading"?"遊戲資料尚在載入，請稍等片刻。":state.phase==="reveal"||state.phase==="next"?"本輪已交易完畢，請先揭曉報酬，再進入下一輪。":state.phase==="finished"?"本局已結束，請按「重新開始新局」後再交易。":"目前無法交易，請確認遊戲資料已載入。";
   setMessage(message);return;
  }
  const stock=state.stocks.find(x=>x.ticker===ticker);if(!stock)return;
- state.selected=ticker;
- $("qty").value="100";
- $("tradeModal").classList.remove("hidden");$("tradeModal").setAttribute("aria-hidden","false");
- renderStocks();renderControls();
- try{$("qty").focus({preventScroll:true});$("qty").select();}catch(e){}
+ state.selected=ticker;$("qty").value="100";
+ $("tradeModal").classList.remove("hidden");$("tradeModal").setAttribute("aria-hidden","false");$("tradeModal").style.display="grid";
+ renderStocks();renderControls();syncEstimate();
 }
 function closeTradeModal(clear){
  $("tradeModal").classList.add("hidden");$("tradeModal").setAttribute("aria-hidden","true");
@@ -217,8 +214,7 @@ function renderControls(){
  if(state.selected){const s=state.stocks.find(x=>x.ticker===state.selected);$("selectedName").textContent=s.gameName;$("selectedPrice").textContent="遊戲代號 "+s.gameCode;$("modalPrice").textContent=priceFmt(s.price);$("modalCash").textContent=money(state.cash);$("modalOwned").textContent=intFmt(state.holdings[s.ticker]||0)+" 股";}else{$("selectedName").textContent="選擇股票";$("selectedPrice").textContent="—";$("modalPrice").textContent="—";$("modalCash").textContent=money(state.cash);$("modalOwned").textContent="—";}syncEstimate();
 }
 function renderStocks(){
- $("stockRows").innerHTML=state.stocks.map(s=>{const q=state.holdings[s.ticker]||0;return '<tr><td><button type="button" class="stock-open" data-ticker="'+s.ticker+'" aria-label="為 '+s.gameName+' 下單">'+s.gameName+'<span class="code">遊戲代號 '+s.gameCode+'</span></button></td><td class="num">'+priceFmt(s.price)+'</td><td class="num"><span class="muted">'+(state.phase==="trade"?"尚未揭曉":state.phase==="idle"?"—":state.phase==="finished"?"已結算":"待揭曉")+'</span></td><td class="num">'+intFmt(q)+'</td><td class="num">'+money(q*s.price)+'</td></tr>';}).join("");
- $("stockRows").querySelectorAll(".stock-open").forEach(b=>b.addEventListener("click",()=>openTradeModal(b.dataset.ticker)));
+ $("stockRows").innerHTML=state.stocks.map(s=>{const q=state.holdings[s.ticker]||0;return '<tr><td class="stock-cell"><button type="button" class="stock-open" data-ticker="'+s.ticker+'" aria-label="選擇 '+s.gameName+'">'+s.gameName+'<span class="code">遊戲代號 '+s.gameCode+'</span></button></td><td class="num">'+priceFmt(s.price)+'</td><td class="num"><span class="muted">'+(state.phase==="trade"?"尚未揭曉":state.phase==="idle"?"—":state.phase==="finished"?"已結算":"待揭曉")+'</span></td><td class="num">'+intFmt(q)+'</td><td class="num">'+money(q*s.price)+'</td></tr>';}).join("");
  $("marketBadge").textContent="12 檔個股＋1 檔 ETF";
 }
 function renderHistory(){
@@ -303,6 +299,7 @@ async function loadGame(){
   renderAll();
  }catch(e){state.phase="error";setPhase("資料載入失敗",e.message);setMessage("無法開始，避免使用錯誤或虛構數值。");$("dataNotice").textContent="資料檔無法載入："+e.message;renderControlsAfterLoad();}
 }
+$("stockRows").addEventListener("click",e=>{const button=e.target.closest(".stock-open");if(button)openTradeModal(button.dataset.ticker);});
 $("buyBtn").addEventListener("click",()=>commitTrade("buy"));
 $("sellBtn").addEventListener("click",()=>commitTrade("sell"));
 $("holdBtn").addEventListener("click",()=>commitTrade("hold"));
