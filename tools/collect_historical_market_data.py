@@ -48,7 +48,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 def fetch_json(url: str) -> dict:
     last_error = None
-    for attempt in range(4):
+    for attempt in range(3):
         req = urllib.request.Request(
             url,
             headers={
@@ -57,14 +57,14 @@ def fetch_json(url: str) -> dict:
             },
         )
         try:
-            with urllib.request.urlopen(req, timeout=30) as response:
+            with urllib.request.urlopen(req, timeout=12) as response:
                 if response.status != 200:
                     raise RuntimeError(f"HTTP {response.status}")
                 return json.loads(response.read().decode("utf-8"))
         except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError, RuntimeError) as exc:
             last_error = exc
-            if attempt < 3:
-                time.sleep(1.5 * (attempt + 1))
+            if attempt < 2:
+                time.sleep(0.8 * (attempt + 1))
     raise RuntimeError(str(last_error))
 
 
@@ -234,7 +234,7 @@ for result in series_results:
 def fetch_twse_december_close(stock_code: str, year: int) -> dict:
     """Fetch the official TWSE daily trading rows for December and retain the last close."""
     month_date = f"{year}12" + "01"
-    url = "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?" + urllib.parse.urlencode({
+    url = "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?" + urllib.parse.urlencode({
         "date": month_date, "stockNo": stock_code, "response": "json"
     })
     row = {
@@ -271,7 +271,7 @@ def fetch_twse_december_close(stock_code: str, year: int) -> dict:
                 "last_trading_date": date_text,
                 "official_december_close_ntd": close_value,
                 "status": "OK",
-                "note": "Official TWSE daily close for last available trading day in December."
+                "note": "Official TWSE STOCK_DAY_AVG daily close for last available trading day in December."
             })
         else:
             row["note"] = str(payload.get("stat") or "No usable close value in response")
@@ -283,17 +283,35 @@ def fetch_twse_december_close(stock_code: str, year: int) -> dict:
 
 # Official TWSE monthly daily records are available from 1999-01-05 onward.
 # Keep this separate from Yahoo adjusted-close returns: official raw close is not total return.
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
 official_december_rows = []
+tasks = []
 for asset in ASSETS:
     stock_code = asset["ticker"].split(".")[0]
     for year in range(1999, 2022):
-        row = fetch_twse_december_close(stock_code, year)
+        tasks.append((asset, stock_code, year))
+
+print(f"[TWSE] Starting {len(tasks)} monthly-endpoint requests (max 4 concurrent).", flush=True)
+with ThreadPoolExecutor(max_workers=4) as pool:
+    futures = {
+        pool.submit(fetch_twse_december_close, stock_code, year): (asset, year)
+        for asset, stock_code, year in tasks
+    }
+    done = 0
+    for future in as_completed(futures):
+        asset, year = futures[future]
+        row = future.result()
         row["ticker"] = asset["ticker"]
         row["game_name"] = asset["game_name"]
         official_december_rows.append(row)
+        done += 1
         if row["status"] != "OK":
-            print(f"[TWSE] {asset['ticker']} {year}: {row['status']} {row['note']}")
-        time.sleep(0.12)
+            print(f"[TWSE] {asset['ticker']} {year}: {row['status']} {row['note']}", flush=True)
+        if done % 12 == 0 or done == len(tasks):
+            print(f"[TWSE] Completed {done}/{len(tasks)} requests.", flush=True)
+
+official_december_rows.sort(key=lambda r: (r["ticker"], r["year"]))
 
 def write_csv(path: Path, rows: list[dict], fieldnames: list[str]) -> None:
     with path.open("w", encoding="utf-8-sig", newline="") as f:
