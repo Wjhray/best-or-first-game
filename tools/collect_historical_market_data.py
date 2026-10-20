@@ -234,7 +234,7 @@ for result in series_results:
 def fetch_twse_december_close(stock_code: str, year: int) -> dict:
     """Fetch the official TWSE daily trading rows for December and retain the last close."""
     month_date = f"{year}12" + "01"
-    url = "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?" + urllib.parse.urlencode({
+    url = "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?" + urllib.parse.urlencode({
         "date": month_date, "stockNo": stock_code, "response": "json"
     })
     row = {
@@ -271,7 +271,7 @@ def fetch_twse_december_close(stock_code: str, year: int) -> dict:
                 "last_trading_date": date_text,
                 "official_december_close_ntd": close_value,
                 "status": "OK",
-                "note": "Official TWSE STOCK_DAY_AVG daily close for last available trading day in December."
+                "note": "Official TWSE STOCK_DAY daily close for last available trading day in December."
             })
         else:
             row["note"] = str(payload.get("stat") or "No usable close value in response")
