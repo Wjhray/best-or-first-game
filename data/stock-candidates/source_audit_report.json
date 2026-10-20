@@ -1,0 +1,298 @@
+{
+  "generated_at_utc": "2026-10-20T11:58:54.841413+00:00",
+  "method": "Calendar-year total-return candidate = Yahoo adjusted close at last available trading observation of year / prior calendar-year-end adjusted close - 1. The adjusted-close time series is secondary source data and is not yet officially cross-checked.",
+  "base_price_method": "Raw close on the last available December 1996 trading day; not retrospectively adjusted.",
+  "primary_sources_for_crosscheck": [
+    {
+      "name": "TWSE daily closing prices and monthly average prices dataset",
+      "url": "https://data.gov.tw/dataset/11548"
+    },
+    {
+      "name": "TWSE listed-company dividend distribution dataset",
+      "url": "https://data.gov.tw/en/datasets/31612"
+    }
+  ],
+  "adjusted_close_method_source": "https://in.help.yahoo.com/kb/adjusted-close-sln28256.html",
+  "years_required": [
+    1997,
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "assets_required": [
+    {
+      "ticker": "2330.TW",
+      "game_name": "晶峰科技",
+      "game_code": "233",
+      "real_name": "台積電",
+      "note": ""
+    },
+    {
+      "ticker": "1303.TW",
+      "game_name": "南岳材料",
+      "game_code": "130",
+      "real_name": "南亞",
+      "note": ""
+    },
+    {
+      "ticker": "2002.TW",
+      "game_name": "鋼岳重工",
+      "game_code": "200",
+      "real_name": "中鋼",
+      "note": ""
+    },
+    {
+      "ticker": "9911.TW",
+      "game_name": "櫻華生活",
+      "game_code": "991",
+      "real_name": "櫻花",
+      "note": ""
+    },
+    {
+      "ticker": "1216.TW",
+      "game_name": "統盛食品",
+      "game_code": "121",
+      "real_name": "統一",
+      "note": ""
+    },
+    {
+      "ticker": "1604.TW",
+      "game_name": "聲華電器",
+      "game_code": "160",
+      "real_name": "聲寶",
+      "note": ""
+    },
+    {
+      "ticker": "2303.TW",
+      "game_name": "聯晶科技",
+      "game_code": "230",
+      "real_name": "聯電",
+      "note": ""
+    },
+    {
+      "ticker": "1707.TW",
+      "game_name": "葡康生技",
+      "game_code": "170",
+      "real_name": "葡萄王",
+      "note": ""
+    },
+    {
+      "ticker": "2892.TW",
+      "game_name": "第一金融",
+      "game_code": "289",
+      "real_name": "第一金控",
+      "note": "第一金控於2003-01-02掛牌；1997-2002前身第一銀行序列需另行核證，不能以2892.TW直接補值。"
+    },
+    {
+      "ticker": "2204.TW",
+      "game_name": "華馳汽車",
+      "game_code": "220",
+      "real_name": "中華車",
+      "note": ""
+    },
+    {
+      "ticker": "2501.TW",
+      "game_name": "國岳建設",
+      "game_code": "250",
+      "real_name": "國建",
+      "note": ""
+    },
+    {
+      "ticker": "1210.TW",
+      "game_name": "大豐食品",
+      "game_code": "121-2",
+      "real_name": "大成",
+      "note": ""
+    }
+  ],
+  "results": {
+    "2330.TW": {
+      "fetch_status": "FETCHED",
+      "missing_years": [
+        "1997:MISSING_PRIOR_YEAR_END",
+        "1998:MISSING_PRIOR_YEAR_END",
+        "1999:MISSING_PRIOR_YEAR_END",
+        "2000:MISSING_PRIOR_YEAR_END"
+      ],
+      "missing_count": 4,
+      "base_price_status": "MISSING_1996_DECEMBER_CLOSE",
+      "fetch_error": "",
+      "note": ""
+    },
+    "1303.TW": {
+      "fetch_status": "FETCHED",
+      "missing_years": [
+        "1997:MISSING_PRIOR_YEAR_END",
+        "1998:MISSING_PRIOR_YEAR_END",
+        "1999:MISSING_PRIOR_YEAR_END",
+        "2000:MISSING_PRIOR_YEAR_END"
+      ],
+      "missing_count": 4,
+      "base_price_status": "MISSING_1996_DECEMBER_CLOSE",
+      "fetch_error": "",
+      "note": ""
+    },
+    "2002.TW": {
+      "fetch_status": "FETCHED",
+      "missing_years": [
+        "1997:MISSING_PRIOR_YEAR_END",
+        "1998:MISSING_PRIOR_YEAR_END",
+        "1999:MISSING_PRIOR_YEAR_END",
+        "2000:MISSING_PRIOR_YEAR_END"
+      ],
+      "missing_count": 4,
+      "base_price_status": "MISSING_1996_DECEMBER_CLOSE",
+      "fetch_error": "",
+      "note": ""
+    },
+    "9911.TW": {
+      "fetch_status": "FETCHED",
+      "missing_years": [
+        "1997:MISSING_PRIOR_YEAR_END",
+        "1998:MISSING_PRIOR_YEAR_END",
+        "1999:MISSING_PRIOR_YEAR_END",
+        "2000:MISSING_PRIOR_YEAR_END"
+      ],
+      "missing_count": 4,
+      "base_price_status": "MISSING_1996_DECEMBER_CLOSE",
+      "fetch_error": "",
+      "note": ""
+    },
+    "1216.TW": {
+      "fetch_status": "FETCHED",
+      "missing_years": [
+        "1997:MISSING_PRIOR_YEAR_END",
+        "1998:MISSING_PRIOR_YEAR_END",
+        "1999:MISSING_PRIOR_YEAR_END",
+        "2000:MISSING_PRIOR_YEAR_END"
+      ],
+      "missing_count": 4,
+      "base_price_status": "MISSING_1996_DECEMBER_CLOSE",
+      "fetch_error": "",
+      "note": ""
+    },
+    "1604.TW": {
+      "fetch_status": "FETCHED",
+      "missing_years": [
+        "1997:MISSING_PRIOR_YEAR_END",
+        "1998:MISSING_PRIOR_YEAR_END",
+        "1999:MISSING_PRIOR_YEAR_END",
+        "2000:MISSING_PRIOR_YEAR_END"
+      ],
+      "missing_count": 4,
+      "base_price_status": "MISSING_1996_DECEMBER_CLOSE",
+      "fetch_error": "",
+      "note": ""
+    },
+    "2303.TW": {
+      "fetch_status": "FETCHED",
+      "missing_years": [
+        "1997:MISSING_PRIOR_YEAR_END",
+        "1998:MISSING_PRIOR_YEAR_END",
+        "1999:MISSING_PRIOR_YEAR_END",
+        "2000:MISSING_PRIOR_YEAR_END"
+      ],
+      "missing_count": 4,
+      "base_price_status": "MISSING_1996_DECEMBER_CLOSE",
+      "fetch_error": "",
+      "note": ""
+    },
+    "1707.TW": {
+      "fetch_status": "FETCHED",
+      "missing_years": [
+        "1997:MISSING_PRIOR_YEAR_END",
+        "1998:MISSING_PRIOR_YEAR_END",
+        "1999:MISSING_PRIOR_YEAR_END",
+        "2000:MISSING_PRIOR_YEAR_END"
+      ],
+      "missing_count": 4,
+      "base_price_status": "MISSING_1996_DECEMBER_CLOSE",
+      "fetch_error": "",
+      "note": ""
+    },
+    "2892.TW": {
+      "fetch_status": "FETCHED",
+      "missing_years": [
+        "1997:MISSING_PRIOR_YEAR_END",
+        "1998:MISSING_PRIOR_YEAR_END",
+        "1999:MISSING_PRIOR_YEAR_END",
+        "2000:MISSING_PRIOR_YEAR_END",
+        "2001:MISSING_PRIOR_YEAR_END",
+        "2002:MISSING_PRIOR_YEAR_END",
+        "2003:MISSING_PRIOR_YEAR_END"
+      ],
+      "missing_count": 7,
+      "base_price_status": "MISSING_1996_DECEMBER_CLOSE",
+      "fetch_error": "",
+      "note": "第一金控於2003-01-02掛牌；1997-2002前身第一銀行序列需另行核證，不能以2892.TW直接補值。"
+    },
+    "2204.TW": {
+      "fetch_status": "FETCHED",
+      "missing_years": [
+        "1997:MISSING_PRIOR_YEAR_END",
+        "1998:MISSING_PRIOR_YEAR_END",
+        "1999:MISSING_PRIOR_YEAR_END",
+        "2000:MISSING_PRIOR_YEAR_END"
+      ],
+      "missing_count": 4,
+      "base_price_status": "MISSING_1996_DECEMBER_CLOSE",
+      "fetch_error": "",
+      "note": ""
+    },
+    "2501.TW": {
+      "fetch_status": "FETCHED",
+      "missing_years": [
+        "1997:MISSING_PRIOR_YEAR_END",
+        "1998:MISSING_PRIOR_YEAR_END",
+        "1999:MISSING_PRIOR_YEAR_END",
+        "2000:MISSING_PRIOR_YEAR_END"
+      ],
+      "missing_count": 4,
+      "base_price_status": "MISSING_1996_DECEMBER_CLOSE",
+      "fetch_error": "",
+      "note": ""
+    },
+    "1210.TW": {
+      "fetch_status": "FETCHED",
+      "missing_years": [
+        "1997:MISSING_PRIOR_YEAR_END",
+        "1998:MISSING_PRIOR_YEAR_END",
+        "1999:MISSING_PRIOR_YEAR_END",
+        "2000:MISSING_PRIOR_YEAR_END"
+      ],
+      "missing_count": 4,
+      "base_price_status": "MISSING_1996_DECEMBER_CLOSE",
+      "fetch_error": "",
+      "note": ""
+    }
+  },
+  "totals": {
+    "assets": 12,
+    "annual_return_rows": 300,
+    "complete_return_rows": 249,
+    "missing_return_rows": 51,
+    "base_prices_found": 0,
+    "base_prices_missing": 12
+  }
+}
