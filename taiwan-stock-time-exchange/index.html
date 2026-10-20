@@ -164,7 +164,7 @@ function commitTrade(kind){
  }else if(kind==="sell"){
   const owned=state.holdings[s.ticker]||0;if(q>owned){setMessage("持股不足：目前只有 "+intFmt(owned)+" 股 "+s.gameName+"。");return;}
   const proceeds=round2(q*s.price);state.cash=round2(state.cash+proceeds);state.holdings[s.ticker]=owned-q;
-  state.transactions.push({order:++state.order,title:"第 "+(state.roundIndex+1)+" 回合｜賣出 "+s.gameName,detail:"賣出 "+intFmt(q)+" 股，成交參考價 "+priceFmt(s.price),value:"+"+money(proceeds),positive:true};
+  state.transactions.push({order:++state.order,title:"第 "+(state.roundIndex+1)+" 回合｜賣出 "+s.gameName,detail:"賣出 "+intFmt(q)+" 股，成交參考價 "+priceFmt(s.price),value:"+"+money(proceeds),positive:true});
   state.pendingAction={kind:"sell",name:s.gameName,qty:q};
   setMessage("已賣出 "+s.gameName+" "+intFmt(q)+" 股。本輪交易已鎖定，接著揭曉市場報酬。");
  }else{
