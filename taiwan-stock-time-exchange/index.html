@@ -21,7 +21,7 @@
   <div class="pills"><span class="pill">新台幣 1,000,000 元起</span><span class="pill">12 檔個股</span><span class="pill">25 年抽 20 年</span><span class="pill">手機可玩</span></div>
 </header>
 
-<div class="banner" id="dataNotice"><strong>資料說明：</strong>維持原本 20 回合規則：每局從 1997–2021 年隨機抽取 20 個不重複年度，玩家交易後才揭曉該年度報酬率。圖片數值依原值使用；其他報酬率為現有候選資料。</div>
+<div class="banner" id="dataNotice"><strong>資料說明：</strong>維持原本 20 回合規則：每局從 1997–2021 年隨機抽取 20 個不重複年度，玩家交易後才揭曉該年度報酬率。市場同時包含 12 檔個股與原本的「1985 台灣一 ETF」。圖片數值依原值使用；其他報酬率為現有候選資料。</div>
 <div class="stats">
   <div class="stat"><div class="label">可用現金</div><div class="value" id="cashStat">讀取中…</div><div class="hint">買賣後即時更新</div></div>
   <div class="stat"><div class="label">持股市值</div><div class="value" id="holdingStat">讀取中…</div><div class="hint">持股數量 × 最新股價</div></div>
@@ -133,7 +133,7 @@ function renderControls(){
 function renderStocks(){
  $("stockRows").innerHTML=state.stocks.map(s=>{const q=state.holdings[s.ticker]||0;return '<tr><td><div class="stockname">'+s.gameName+'</div><div class="code">'+s.gameCode+'｜'+s.realName+'</div></td><td class="num">'+priceFmt(s.price)+'</td><td class="num"><span class="muted">'+(state.phase==="trade"?"尚未揭曉":state.phase==="idle"?"—":state.phase==="finished"?"已結算":"待揭曉")+'</span></td><td class="num">'+intFmt(q)+'</td><td class="num">'+money(q*s.price)+'</td><td><button class="secondary selectBtn" data-ticker="'+s.ticker+'" style="padding:8px 10px;font-size:12px">'+(state.selected===s.ticker?"已選擇":"選擇")+'</button></td></tr>';}).join("");
  $("stockRows").querySelectorAll(".selectBtn").forEach(b=>b.addEventListener("click",()=>{if(state.phase!=="trade")return;state.selected=b.dataset.ticker;renderStocks();renderControls();}));
- $("marketBadge").textContent=state.stocks.length+" 檔個股";
+ $("marketBadge").textContent="12 檔個股＋1 檔 ETF";
 }
 function renderHistory(){
  const all=[...state.transactions,...state.roundHistory].sort((a,b)=>b.order-a.order);
@@ -205,12 +205,15 @@ async function loadGame(){
   const bases=parseCSV(await br.text()),returns=parseCSV(await rr.text()),retMap=new Map();
   for(const r of returns){if(!retMap.has(r.real_ticker))retMap.set(r.real_ticker,{});const v=Number(r.annual_total_return_decimal);if(r.annual_total_return_decimal!==""&&Number.isFinite(v))retMap.get(r.real_ticker)[Number(r.year)]=v;}
   state.stocks=bases.map(b=>({ticker:b.real_ticker,realName:b.real_name,gameName:b.game_name,gameCode:b.game_code,basePrice:Number(b.base_close_ntd),price:Number(b.base_close_ntd),returns:retMap.get(b.real_ticker)||{}}));
+  // 保留原本「1985 台灣一 ETF」：與 12 檔個股共用同一局、同一組隨機年度與交易流程。
+  const etfReturns={1997:0.1808,1998:-0.2160,1999:0.3163,2000:-0.4385,2001:0.1702,2002:-0.1979,2003:0.3230,2004:0.0423,2005:0.0666,2006:0.1948,2007:0.0872,2008:-0.4603,2009:0.7834,2010:0.0958,2011:-0.2118,2012:0.0887,2013:0.1185,2014:0.0808,2015:-0.1041,2016:0.1098,2017:0.1501,2018:-0.0860,2019:0.2333,2020:0.2280,2021:0.2366};
+  state.stocks.push({ticker:"ETF-1985",realName:"台灣一 ETF",gameName:"台灣一 ETF",gameCode:"1985",basePrice:40,price:40,returns:etfReturns,isETF:true});
   const bad=state.stocks.filter(s=>!Number.isFinite(s.basePrice)||s.basePrice<=0);
   const missing=[];for(const s of state.stocks)for(let y=FIRST_YEAR;y<=LAST_YEAR;y++)if(!Number.isFinite(s.returns[y]))missing.push(s.gameName+" "+y);
   if(bad.length)throw new Error("起始股價缺漏："+bad.map(s=>s.gameName).join("、"));
   if(missing.length)throw new Error("年度報酬率缺漏："+missing.slice(0,6).join("、"));
   state.phase="idle";setPhase("準備開始新局","按下「開始新局」後，隨機抽取 20 個不同年度；不會提前顯示年份。");setMessage("遊戲資料已載入。規則維持 20 回合、25 年隨機抽 20 年、每回合先交易後揭曉。");
-  $("dataNotice").innerHTML="<strong>資料已載入：</strong>12 檔起始價與 300 筆年度報酬率均有數值。51 筆依你提供的圖片使用；其餘 249 筆為現有候選值。";
+  $("dataNotice").innerHTML="<strong>資料已載入：</strong>12 檔個股與「1985 台灣一 ETF」均已載入；ETF 使用原有 25 筆年度報酬率。51 筆依你提供的圖片使用；其餘 249 筆為現有候選值。";
   renderAll();
  }catch(e){state.phase="error";setPhase("資料載入失敗",e.message);setMessage("無法開始，避免使用錯誤或虛構數值。");$("dataNotice").textContent="資料檔無法載入："+e.message;renderControlsAfterLoad();}
 }
