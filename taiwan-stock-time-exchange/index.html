@@ -183,7 +183,12 @@ function syncEstimate(){
  if($("sellBtn"))$("sellBtn").disabled=state.phase!=="trade"||!s||!q||q>(state.holdings[s.ticker]||0);
 }
 function openTradeModal(ticker){
- if(state.phase!=="trade"){setMessage("請先開始新局，或等待下一回合交易。");return;}
+ // 初始畫面尚未開始時，點選標的名稱會自動開始一局並立即開啟下單視窗。
+ if(state.phase==="idle")startGame();
+ if(state.phase!=="trade"){
+  const message=state.phase==="loading"?"遊戲資料尚在載入，請稍等片刻。":state.phase==="reveal"||state.phase==="next"?"請先完成本輪揭曉／結算，再進行下一輪交易。":state.phase==="finished"?"本局已結束，請按「重新開始新局」後再交易。":"目前無法交易，請確認遊戲資料已載入。";
+  setMessage(message);return;
+ }
  const stock=state.stocks.find(x=>x.ticker===ticker);if(!stock)return;
  state.selected=ticker;
  $("qty").value="100";
@@ -209,10 +214,10 @@ function renderControls(){
  if(state.phase==="reveal")$("advanceBtn").textContent="揭曉本輪報酬 →";
  if(state.phase==="next")$("advanceBtn").textContent=state.roundIndex===TOTAL_ROUNDS-1?"查看最終結算":"進入下一輪 →";
  if(state.phase==="finished")$("advanceBtn").textContent="本局已結束";
- if(state.selected){const s=state.stocks.find(x=>x.ticker===state.selected);$("selectedName").textContent=s.gameName;$("selectedPrice").textContent=s.gameCode+"｜"+s.realName;$("modalPrice").textContent=priceFmt(s.price);$("modalCash").textContent=money(state.cash);$("modalOwned").textContent=intFmt(state.holdings[s.ticker]||0)+" 股";}else{$("selectedName").textContent="選擇股票";$("selectedPrice").textContent="—";$("modalPrice").textContent="—";$("modalCash").textContent=money(state.cash);$("modalOwned").textContent="—";}syncEstimate();
+ if(state.selected){const s=state.stocks.find(x=>x.ticker===state.selected);$("selectedName").textContent=s.gameName;$("selectedPrice").textContent="遊戲代號 "+s.gameCode;$("modalPrice").textContent=priceFmt(s.price);$("modalCash").textContent=money(state.cash);$("modalOwned").textContent=intFmt(state.holdings[s.ticker]||0)+" 股";}else{$("selectedName").textContent="選擇股票";$("selectedPrice").textContent="—";$("modalPrice").textContent="—";$("modalCash").textContent=money(state.cash);$("modalOwned").textContent="—";}syncEstimate();
 }
 function renderStocks(){
- $("stockRows").innerHTML=state.stocks.map(s=>{const q=state.holdings[s.ticker]||0;return '<tr><td><button type="button" class="stock-open" data-ticker="'+s.ticker+'" aria-label="為 '+s.gameName+' 下單">'+s.gameName+'<span class="code">'+s.gameCode+'｜'+s.realName+'</span></button></td><td class="num">'+priceFmt(s.price)+'</td><td class="num"><span class="muted">'+(state.phase==="trade"?"尚未揭曉":state.phase==="idle"?"—":state.phase==="finished"?"已結算":"待揭曉")+'</span></td><td class="num">'+intFmt(q)+'</td><td class="num">'+money(q*s.price)+'</td></tr>';}).join("");
+ $("stockRows").innerHTML=state.stocks.map(s=>{const q=state.holdings[s.ticker]||0;return '<tr><td><button type="button" class="stock-open" data-ticker="'+s.ticker+'" aria-label="為 '+s.gameName+' 下單">'+s.gameName+'<span class="code">遊戲代號 '+s.gameCode+'</span></button></td><td class="num">'+priceFmt(s.price)+'</td><td class="num"><span class="muted">'+(state.phase==="trade"?"尚未揭曉":state.phase==="idle"?"—":state.phase==="finished"?"已結算":"待揭曉")+'</span></td><td class="num">'+intFmt(q)+'</td><td class="num">'+money(q*s.price)+'</td></tr>';}).join("");
  $("stockRows").querySelectorAll(".stock-open").forEach(b=>b.addEventListener("click",()=>openTradeModal(b.dataset.ticker)));
  $("marketBadge").textContent="12 檔個股＋1 檔 ETF";
 }
