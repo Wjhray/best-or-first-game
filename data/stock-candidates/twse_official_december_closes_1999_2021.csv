@@ -1,277 +1,277 @@
 ﻿year,stock_code,ticker,game_name,last_trading_date,official_december_close_ntd,status,source_url,note
-1999,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=19991201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2000,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20001201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2001,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20011201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2002,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20021201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2003,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20031201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2004,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20041201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2005,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20051201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2006,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20061201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2007,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20071201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2008,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20081201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2009,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20091201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2010,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20101201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2011,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20111201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2012,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20121201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2013,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20131201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2014,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20141201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2015,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20151201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2016,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20161201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2017,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20171201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2018,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20181201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2019,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20191201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2020,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20201201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2021,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20211201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-1999,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=19991201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2000,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20001201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2001,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20011201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2002,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20021201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2003,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20031201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2004,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20041201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2005,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20051201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2006,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20061201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2007,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20071201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2008,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20081201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2009,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20091201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2010,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20101201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2011,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20111201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2012,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20121201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2013,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20131201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2014,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20141201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2015,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20151201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2016,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20161201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2017,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20171201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2018,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20181201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2019,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20191201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2020,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20201201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2021,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20211201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-1999,1303,1303.TW,南岳材料,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=19991201&stockNo=1303&response=json,查詢日期小於99年1月4日，請重新查詢!
-2000,1303,1303.TW,南岳材料,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20001201&stockNo=1303&response=json,查詢日期小於99年1月4日，請重新查詢!
-2001,1303,1303.TW,南岳材料,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20011201&stockNo=1303&response=json,查詢日期小於99年1月4日，請重新查詢!
-2002,1303,1303.TW,南岳材料,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20021201&stockNo=1303&response=json,查詢日期小於99年1月4日，請重新查詢!
-2003,1303,1303.TW,南岳材料,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20031201&stockNo=1303&response=json,查詢日期小於99年1月4日，請重新查詢!
-2004,1303,1303.TW,南岳材料,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20041201&stockNo=1303&response=json,查詢日期小於99年1月4日，請重新查詢!
-2005,1303,1303.TW,南岳材料,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20051201&stockNo=1303&response=json,查詢日期小於99年1月4日，請重新查詢!
-2006,1303,1303.TW,南岳材料,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20061201&stockNo=1303&response=json,查詢日期小於99年1月4日，請重新查詢!
-2007,1303,1303.TW,南岳材料,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20071201&stockNo=1303&response=json,查詢日期小於99年1月4日，請重新查詢!
-2008,1303,1303.TW,南岳材料,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20081201&stockNo=1303&response=json,查詢日期小於99年1月4日，請重新查詢!
-2009,1303,1303.TW,南岳材料,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20091201&stockNo=1303&response=json,查詢日期小於99年1月4日，請重新查詢!
-2010,1303,1303.TW,南岳材料,2010-12-31,72.7,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20101201&stockNo=1303&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2011,1303,1303.TW,南岳材料,2011-12-30,60.1,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20111201&stockNo=1303&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2012,1303,1303.TW,南岳材料,2012-12-28,56.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20121201&stockNo=1303&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2013,1303,1303.TW,南岳材料,2013-12-31,68.9,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20131201&stockNo=1303&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2014,1303,1303.TW,南岳材料,2014-12-31,65.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20141201&stockNo=1303&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2015,1303,1303.TW,南岳材料,2015-12-31,61.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20151201&stockNo=1303&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2016,1303,1303.TW,南岳材料,2016-12-30,71.2,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20161201&stockNo=1303&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2017,1303,1303.TW,南岳材料,2017-12-29,77.9,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20171201&stockNo=1303&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2018,1303,1303.TW,南岳材料,2018-12-28,75.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20181201&stockNo=1303&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2019,1303,1303.TW,南岳材料,2019-12-31,72.8,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20191201&stockNo=1303&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2020,1303,1303.TW,南岳材料,2020-12-31,71.9,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20201201&stockNo=1303&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2021,1303,1303.TW,南岳材料,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20211201&stockNo=1303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-1999,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=19991201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2000,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20001201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2001,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20011201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2002,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20021201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2003,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20031201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2004,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20041201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2005,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20051201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2006,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20061201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2007,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20071201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2008,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20081201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2009,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20091201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2010,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20101201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2011,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20111201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2012,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20121201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2013,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20131201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2014,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20141201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2015,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20151201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2016,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20161201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2017,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20171201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2018,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20181201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2019,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20191201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2020,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20201201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2021,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20211201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-1999,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=19991201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2000,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20001201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2001,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20011201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2002,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20021201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2003,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20031201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2004,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20041201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2005,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20051201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2006,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20061201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2007,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20071201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2008,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20081201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2009,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20091201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2010,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20101201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2011,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20111201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2012,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20121201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2013,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20131201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2014,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20141201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2015,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20151201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2016,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20161201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2017,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20171201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2018,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20181201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2019,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20191201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2020,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20201201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2021,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20211201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-1999,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=19991201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2000,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20001201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2001,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20011201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2002,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20021201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2003,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20031201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2004,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20041201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2005,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20051201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2006,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20061201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2007,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20071201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2008,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20081201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2009,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20091201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2010,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20101201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2011,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20111201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2012,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20121201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2013,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20131201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2014,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20141201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2015,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20151201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2016,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20161201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2017,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20171201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2018,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20181201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2019,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20191201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2020,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20201201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2021,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20211201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-1999,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=19991201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2000,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20001201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2001,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20011201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2002,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20021201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2003,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20031201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2004,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20041201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2005,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20051201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2006,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20061201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2007,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20071201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2008,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20081201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2009,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20091201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2010,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20101201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2011,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20111201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2012,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20121201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2013,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20131201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2014,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20141201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2015,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20151201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2016,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20161201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2017,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20171201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2018,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20181201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2019,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20191201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2020,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20201201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2021,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20211201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-1999,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=19991201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2000,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20001201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2001,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20011201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2002,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20021201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2003,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20031201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2004,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20041201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2005,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20051201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2006,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20061201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2007,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20071201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2008,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20081201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2009,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20091201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2010,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20101201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2011,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20111201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2012,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20121201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2013,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20131201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2014,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20141201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2015,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20151201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2016,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20161201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2017,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20171201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2018,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20181201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2019,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20191201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2020,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20201201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2021,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20211201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-1999,2330,2330.TW,晶峰科技,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=19991201&stockNo=2330&response=json,查詢日期小於99年1月4日，請重新查詢!
-2000,2330,2330.TW,晶峰科技,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20001201&stockNo=2330&response=json,查詢日期小於99年1月4日，請重新查詢!
-2001,2330,2330.TW,晶峰科技,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20011201&stockNo=2330&response=json,查詢日期小於99年1月4日，請重新查詢!
-2002,2330,2330.TW,晶峰科技,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20021201&stockNo=2330&response=json,查詢日期小於99年1月4日，請重新查詢!
-2003,2330,2330.TW,晶峰科技,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20031201&stockNo=2330&response=json,查詢日期小於99年1月4日，請重新查詢!
-2004,2330,2330.TW,晶峰科技,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20041201&stockNo=2330&response=json,查詢日期小於99年1月4日，請重新查詢!
-2005,2330,2330.TW,晶峰科技,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20051201&stockNo=2330&response=json,查詢日期小於99年1月4日，請重新查詢!
-2006,2330,2330.TW,晶峰科技,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20061201&stockNo=2330&response=json,查詢日期小於99年1月4日，請重新查詢!
-2007,2330,2330.TW,晶峰科技,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20071201&stockNo=2330&response=json,查詢日期小於99年1月4日，請重新查詢!
-2008,2330,2330.TW,晶峰科技,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20081201&stockNo=2330&response=json,查詢日期小於99年1月4日，請重新查詢!
-2009,2330,2330.TW,晶峰科技,,,MISSING,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20091201&stockNo=2330&response=json,查詢日期小於99年1月4日，請重新查詢!
-2010,2330,2330.TW,晶峰科技,2010-12-31,71.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20101201&stockNo=2330&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2011,2330,2330.TW,晶峰科技,2011-12-30,75.8,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20111201&stockNo=2330&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2012,2330,2330.TW,晶峰科技,2012-12-28,97.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20121201&stockNo=2330&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2013,2330,2330.TW,晶峰科技,2013-12-31,105.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20131201&stockNo=2330&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2014,2330,2330.TW,晶峰科技,2014-12-31,141.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20141201&stockNo=2330&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2015,2330,2330.TW,晶峰科技,2015-12-31,143.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20151201&stockNo=2330&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2016,2330,2330.TW,晶峰科技,2016-12-30,181.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20161201&stockNo=2330&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2017,2330,2330.TW,晶峰科技,2017-12-29,229.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20171201&stockNo=2330&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2018,2330,2330.TW,晶峰科技,2018-12-28,225.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20181201&stockNo=2330&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2019,2330,2330.TW,晶峰科技,2019-12-31,331.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20191201&stockNo=2330&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2020,2330,2330.TW,晶峰科技,2020-12-31,530.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20201201&stockNo=2330&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-2021,2330,2330.TW,晶峰科技,2021-12-30,615.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20211201&stockNo=2330&response=json,Official TWSE STOCK_DAY daily close for last available trading day in December.
-1999,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=19991201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2000,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20001201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2001,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20011201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2002,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20021201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2003,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20031201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2004,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20041201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2005,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20051201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2006,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20061201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2007,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20071201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2008,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20081201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2009,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20091201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2010,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20101201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2011,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20111201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2012,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20121201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2013,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20131201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2014,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20141201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2015,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20151201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2016,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20161201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2017,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20171201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2018,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20181201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2019,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20191201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2020,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20201201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2021,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20211201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-1999,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=19991201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2000,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20001201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2001,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20011201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2002,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20021201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2003,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20031201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2004,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20041201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2005,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20051201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2006,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20061201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2007,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20071201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2008,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20081201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2009,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20091201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2010,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20101201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2011,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20111201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2012,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20121201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2013,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20131201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2014,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20141201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2015,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20151201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2016,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20161201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2017,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20171201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2018,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20181201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2019,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20191201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2020,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20201201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2021,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20211201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-1999,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=19991201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2000,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20001201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2001,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20011201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2002,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20021201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2003,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20031201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2004,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20041201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2005,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20051201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2006,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20061201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2007,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20071201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2008,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20081201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2009,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20091201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2010,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20101201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2011,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20111201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2012,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20121201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2013,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20131201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2014,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20141201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2015,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20151201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2016,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20161201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2017,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20171201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2018,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20181201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2019,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20191201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2020,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20201201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
-2021,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20211201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+1999,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=19991201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2000,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20001201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2001,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20011201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2002,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20021201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2003,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20031201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2004,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20041201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2005,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20051201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2006,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20061201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2007,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20071201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2008,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20081201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2009,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20091201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2010,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20101201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2011,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20111201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2012,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20121201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2013,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20131201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2014,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20141201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2015,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20151201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2016,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20161201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2017,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20171201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2018,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20181201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2019,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20191201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2020,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20201201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2021,1210,1210.TW,大豐食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20211201&stockNo=1210&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+1999,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=19991201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2000,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20001201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2001,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20011201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2002,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20021201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2003,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20031201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2004,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20041201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2005,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20051201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2006,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20061201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2007,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20071201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2008,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20081201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2009,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20091201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2010,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20101201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2011,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20111201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2012,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20121201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2013,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20131201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2014,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20141201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2015,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20151201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2016,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20161201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2017,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20171201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2018,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20181201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2019,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20191201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2020,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20201201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2021,1216,1216.TW,統盛食品,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20211201&stockNo=1216&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+1999,1303,1303.TW,南岳材料,1999-12-28,69.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=19991201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2000,1303,1303.TW,南岳材料,2000-12-30,37.2,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20001201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2001,1303,1303.TW,南岳材料,2001-12-31,26.8,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20011201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2002,1303,1303.TW,南岳材料,2002-12-31,30.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20021201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2003,1303,1303.TW,南岳材料,2003-12-31,49.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20031201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2004,1303,1303.TW,南岳材料,2004-12-31,48.6,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20041201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2005,1303,1303.TW,南岳材料,2005-12-30,45.2,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20051201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2006,1303,1303.TW,南岳材料,2006-12-29,54.3,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20061201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2007,1303,1303.TW,南岳材料,2007-12-31,86.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20071201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2008,1303,1303.TW,南岳材料,2008-12-31,35.3,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20081201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2009,1303,1303.TW,南岳材料,2009-12-31,58.3,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20091201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2010,1303,1303.TW,南岳材料,2010-12-31,72.7,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20101201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2011,1303,1303.TW,南岳材料,2011-12-30,60.1,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20111201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2012,1303,1303.TW,南岳材料,2012-12-28,56.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20121201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2013,1303,1303.TW,南岳材料,2013-12-31,68.9,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20131201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2014,1303,1303.TW,南岳材料,2014-12-31,65.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20141201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2015,1303,1303.TW,南岳材料,2015-12-31,61.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20151201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2016,1303,1303.TW,南岳材料,2016-12-30,71.2,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20161201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2017,1303,1303.TW,南岳材料,2017-12-29,77.9,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20171201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2018,1303,1303.TW,南岳材料,2018-12-28,75.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20181201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2019,1303,1303.TW,南岳材料,2019-12-31,72.8,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20191201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2020,1303,1303.TW,南岳材料,2020-12-31,71.9,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20201201&stockNo=1303&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2021,1303,1303.TW,南岳材料,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20211201&stockNo=1303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+1999,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=19991201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2000,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20001201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2001,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20011201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2002,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20021201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2003,1604,1604.TW,聲華電器,2003-12-31,14.8,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20031201&stockNo=1604&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2004,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20041201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2005,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20051201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2006,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20061201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2007,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20071201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2008,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20081201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2009,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20091201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2010,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20101201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2011,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20111201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2012,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20121201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2013,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20131201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2014,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20141201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2015,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20151201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2016,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20161201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2017,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20171201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2018,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20181201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2019,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20191201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2020,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20201201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2021,1604,1604.TW,聲華電器,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20211201&stockNo=1604&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+1999,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=19991201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2000,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20001201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2001,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20011201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2002,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20021201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2003,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20031201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2004,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20041201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2005,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20051201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2006,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20061201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2007,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20071201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2008,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20081201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2009,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20091201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2010,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20101201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2011,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20111201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2012,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20121201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2013,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20131201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2014,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20141201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2015,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20151201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2016,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20161201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2017,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20171201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2018,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20181201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2019,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20191201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2020,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20201201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2021,1707,1707.TW,葡康生技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20211201&stockNo=1707&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+1999,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=19991201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2000,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20001201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2001,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20011201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2002,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20021201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2003,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20031201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2004,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20041201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2005,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20051201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2006,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20061201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2007,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20071201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2008,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20081201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2009,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20091201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2010,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20101201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2011,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20111201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2012,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20121201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2013,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20131201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2014,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20141201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2015,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20151201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2016,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20161201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2017,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20171201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2018,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20181201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2019,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20191201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2020,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20201201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2021,2002,2002.TW,鋼岳重工,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20211201&stockNo=2002&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+1999,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=19991201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2000,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20001201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2001,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20011201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2002,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20021201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2003,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20031201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2004,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20041201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2005,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20051201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2006,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20061201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2007,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20071201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2008,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20081201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2009,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20091201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2010,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20101201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2011,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20111201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2012,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20121201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2013,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20131201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2014,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20141201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2015,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20151201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2016,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20161201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2017,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20171201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2018,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20181201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2019,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20191201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2020,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20201201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2021,2204,2204.TW,華馳汽車,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20211201&stockNo=2204&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+1999,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=19991201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2000,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20001201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2001,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20011201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2002,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20021201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2003,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20031201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2004,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20041201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2005,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20051201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2006,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20061201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2007,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20071201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2008,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20081201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2009,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20091201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2010,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20101201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2011,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20111201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2012,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20121201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2013,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20131201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2014,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20141201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2015,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20151201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2016,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20161201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2017,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20171201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2018,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20181201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2019,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20191201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2020,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20201201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2021,2303,2303.TW,聯晶科技,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20211201&stockNo=2303&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+1999,2330,2330.TW,晶峰科技,1999-12-28,167.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=19991201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2000,2330,2330.TW,晶峰科技,2000-12-30,78.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20001201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2001,2330,2330.TW,晶峰科技,2001-12-31,87.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20011201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2002,2330,2330.TW,晶峰科技,2002-12-31,42.6,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20021201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2003,2330,2330.TW,晶峰科技,2003-12-31,63.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20031201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2004,2330,2330.TW,晶峰科技,2004-12-31,50.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20041201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2005,2330,2330.TW,晶峰科技,2005-12-30,62.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20051201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2006,2330,2330.TW,晶峰科技,2006-12-29,67.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20061201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2007,2330,2330.TW,晶峰科技,2007-12-31,62.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20071201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2008,2330,2330.TW,晶峰科技,2008-12-31,44.4,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20081201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2009,2330,2330.TW,晶峰科技,2009-12-31,64.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20091201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2010,2330,2330.TW,晶峰科技,2010-12-31,71.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20101201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2011,2330,2330.TW,晶峰科技,2011-12-30,75.8,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20111201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2012,2330,2330.TW,晶峰科技,2012-12-28,97.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20121201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2013,2330,2330.TW,晶峰科技,2013-12-31,105.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20131201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2014,2330,2330.TW,晶峰科技,2014-12-31,141.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20141201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2015,2330,2330.TW,晶峰科技,2015-12-31,143.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20151201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2016,2330,2330.TW,晶峰科技,2016-12-30,181.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20161201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2017,2330,2330.TW,晶峰科技,2017-12-29,229.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20171201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2018,2330,2330.TW,晶峰科技,2018-12-28,225.5,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20181201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2019,2330,2330.TW,晶峰科技,2019-12-31,331.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20191201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2020,2330,2330.TW,晶峰科技,2020-12-31,530.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20201201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+2021,2330,2330.TW,晶峰科技,2021-12-30,615.0,OK,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20211201&stockNo=2330&response=json,Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used.
+1999,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=19991201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2000,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20001201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2001,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20011201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2002,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20021201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2003,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20031201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2004,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20041201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2005,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20051201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2006,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20061201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2007,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20071201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2008,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20081201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2009,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20091201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2010,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20101201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2011,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20111201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2012,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20121201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2013,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20131201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2014,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20141201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2015,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20151201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2016,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20161201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2017,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20171201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2018,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20181201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2019,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20191201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2020,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20201201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2021,2501,2501.TW,國岳建設,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20211201&stockNo=2501&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+1999,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=19991201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2000,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20001201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2001,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20011201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2002,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20021201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2003,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20031201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2004,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20041201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2005,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20051201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2006,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20061201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2007,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20071201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2008,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20081201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2009,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20091201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2010,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20101201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2011,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20111201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2012,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20121201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2013,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20131201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2014,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20141201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2015,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20151201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2016,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20161201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2017,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20171201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2018,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20181201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2019,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20191201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2020,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20201201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2021,2892,2892.TW,第一金融,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20211201&stockNo=2892&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+1999,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=19991201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2000,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20001201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2001,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20011201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2002,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20021201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2003,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20031201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2004,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20041201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2005,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20051201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2006,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20061201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2007,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20071201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2008,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20081201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2009,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20091201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2010,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20101201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2011,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20111201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2012,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20121201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2013,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20131201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2014,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20141201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2015,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20151201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2016,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20161201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2017,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20171201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2018,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20181201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2019,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20191201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2020,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20201201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
+2021,9911,9911.TW,櫻華生活,,,ERROR,https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?date=20211201&stockNo=9911&response=json,RuntimeError: HTTP Error 307: Temporary Redirect
