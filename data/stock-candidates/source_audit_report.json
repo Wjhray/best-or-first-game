@@ -1,7 +1,8 @@
 {
-  "generated_at_utc": "2026-10-20T11:58:54.841413+00:00",
+  "generated_at_utc": "2026-10-20T12:28:03.128370+00:00",
   "method": "Calendar-year total-return candidate = Yahoo adjusted close at last available trading observation of year / prior calendar-year-end adjusted close - 1. The adjusted-close time series is secondary source data and is not yet officially cross-checked.",
-  "base_price_method": "Raw close on the last available December 1996 trading day; not retrospectively adjusted.",
+  "base_price_method": "1996 raw December close is still unavailable from the currently queried free official endpoint; do not substitute annual average price. Official TWSE December last-trading-day closes are collected separately for 1999-2021.",
+  "official_december_close_method": "For each stock and each year 1999-2021, query TWSE STOCK_DAY for December and retain the last dated row with a valid raw close. These are price-only closes and are not total-return figures.",
   "primary_sources_for_crosscheck": [
     {
       "name": "TWSE daily closing prices and monthly average prices dataset",
@@ -290,6 +291,9 @@
   "totals": {
     "assets": 12,
     "annual_return_rows": 300,
+    "official_december_close_rows": 276,
+    "official_december_closes_found": 23,
+    "official_december_closes_missing_or_error": 253,
     "complete_return_rows": 249,
     "missing_return_rows": 51,
     "base_prices_found": 0,
