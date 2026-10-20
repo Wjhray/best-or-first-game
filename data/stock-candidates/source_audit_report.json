@@ -298,5 +298,90 @@
     "missing_return_rows": 51,
     "base_prices_found": 0,
     "base_prices_missing": 12
+  },
+  "user_provided_supplement": {
+    "source_image": "IMG_4041.jpeg",
+    "source_date": "2026-10-20",
+    "description": "Filled previously missing annual return values from user-provided image. These values are not official-verified and must not be represented as verified historical market data.",
+    "values_added": 51,
+    "audit_status": "USER_PROVIDED_IMAGE_PENDING_OFFICIAL_CROSSCHECK",
+    "caution": "1997-2002 values for 2892.TW represent a predecessor First Bank series per the image/context and require separate verification; 2003 image value is also pending official cross-check.",
+    "tickers_years_filled": {
+      "2330.TW": [
+        1997,
+        1998,
+        1999,
+        2000
+      ],
+      "2303.TW": [
+        1997,
+        1998,
+        1999,
+        2000
+      ],
+      "1303.TW": [
+        1997,
+        1998,
+        1999,
+        2000
+      ],
+      "2002.TW": [
+        1997,
+        1998,
+        1999,
+        2000
+      ],
+      "9911.TW": [
+        1997,
+        1998,
+        1999,
+        2000
+      ],
+      "1216.TW": [
+        1997,
+        1998,
+        1999,
+        2000
+      ],
+      "1604.TW": [
+        1997,
+        1998,
+        1999,
+        2000
+      ],
+      "1707.TW": [
+        1997,
+        1998,
+        1999,
+        2000
+      ],
+      "2204.TW": [
+        1997,
+        1998,
+        1999,
+        2000
+      ],
+      "2501.TW": [
+        1997,
+        1998,
+        1999,
+        2000
+      ],
+      "1210.TW": [
+        1997,
+        1998,
+        1999,
+        2000
+      ],
+      "2892.TW": [
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003
+      ]
+    }
   }
 }
