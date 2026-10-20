@@ -12,6 +12,7 @@ import json
 import os
 import sys
 import time
+import threading
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -46,7 +47,12 @@ OUT = Path(sys.argv[1] if len(sys.argv) > 1 else "out")
 OUT.mkdir(parents=True, exist_ok=True)
 
 
-def fetch_json(url: str) -> dict:
+TWSE_REQUEST_LOCK = threading.Lock()
+TWSE_LAST_REQUEST_AT = 0.0
+
+
+def fetch_json(url: str, *, minimum_interval: float = 0.0) -> dict:
+    global TWSE_LAST_REQUEST_AT
     last_error = None
     for attempt in range(3):
         req = urllib.request.Request(
@@ -57,6 +63,12 @@ def fetch_json(url: str) -> dict:
             },
         )
         try:
+            if minimum_interval > 0:
+                with TWSE_REQUEST_LOCK:
+                    wait = minimum_interval - (time.monotonic() - TWSE_LAST_REQUEST_AT)
+                    if wait > 0:
+                        time.sleep(wait)
+                    TWSE_LAST_REQUEST_AT = time.monotonic()
             with urllib.request.urlopen(req, timeout=12) as response:
                 if response.status != 200:
                     raise RuntimeError(f"HTTP {response.status}")
@@ -232,9 +244,13 @@ for result in series_results:
 
 
 def fetch_twse_december_close(stock_code: str, year: int) -> dict:
-    """Fetch the official TWSE daily trading rows for December and retain the last close."""
+    """Fetch TWSE daily close rows via STOCK_DAY_AVG and retain December's final close.
+
+    STOCK_DAY_AVG includes both the daily closing price and a monthly average;
+    use the field name to select the daily close, never the monthly average.
+    """
     month_date = f"{year}12" + "01"
-    url = "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?" + urllib.parse.urlencode({
+    url = "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_AVG?" + urllib.parse.urlencode({
         "date": month_date, "stockNo": stock_code, "response": "json"
     })
     row = {
@@ -243,23 +259,39 @@ def fetch_twse_december_close(stock_code: str, year: int) -> dict:
         "source_url": url, "note": ""
     }
     try:
-        payload = fetch_json(url)
+        payload = fetch_json(url, minimum_interval=1.05)
         data = payload.get("data") or []
         if not data:
             row["note"] = str(payload.get("stat") or "No daily rows returned")
             return row
-        # TWSE date format is ROC year/month/day; close is column 6.
+
+        fields = [str(name).strip() for name in (payload.get("fields") or [])]
+        date_idx = next((i for i, name in enumerate(fields) if "日期" in name), 0)
+        close_idx = next((i for i, name in enumerate(fields) if "收盤價" in name), None)
+        if close_idx is None:
+            # Known STOCK_DAY_AVG schema: 日期, 收盤價, 月平均價.
+            # Fail closed if a changed schema cannot be recognized.
+            if len(fields) >= 2 and "月平均價" in fields[2]:
+                close_idx = 1
+            else:
+                row["status"] = "ERROR"
+                row["note"] = f"Could not identify daily-close column in fields: {fields}"
+                return row
+
         def iso_date(record):
-            parts = str(record[0]).split("/")
+            if len(record) <= date_idx:
+                return ""
+            parts = str(record[date_idx]).split("/")
             if len(parts) != 3:
                 return ""
             return f"{int(parts[0]) + 1911:04d}-{int(parts[1]):02d}-{int(parts[2]):02d}"
+
         valid = []
         for record in data:
-            if len(record) < 7:
+            if len(record) <= max(date_idx, close_idx):
                 continue
             date_text = iso_date(record)
-            close_text = str(record[6]).replace(",", "").strip()
+            close_text = str(record[close_idx]).replace(",", "").strip()
             if date_text and close_text and close_text not in {"--", "-", "X0.00"}:
                 try:
                     valid.append((date_text, float(close_text)))
@@ -271,15 +303,14 @@ def fetch_twse_december_close(stock_code: str, year: int) -> dict:
                 "last_trading_date": date_text,
                 "official_december_close_ntd": close_value,
                 "status": "OK",
-                "note": "Official TWSE STOCK_DAY daily close for last available trading day in December."
+                "note": "Official TWSE STOCK_DAY_AVG daily closing-price field for the last available trading day in December; monthly average field not used."
             })
         else:
-            row["note"] = str(payload.get("stat") or "No usable close value in response")
+            row["note"] = str(payload.get("stat") or f"No usable daily-close value; fields={fields}")
     except Exception as exc:
         row["status"] = "ERROR"
         row["note"] = f"{type(exc).__name__}: {exc}"
     return row
-
 
 # Official TWSE monthly daily records are available from 1999-01-05 onward.
 # Keep this separate from Yahoo adjusted-close returns: official raw close is not total return.
@@ -292,7 +323,7 @@ for asset in ASSETS:
     for year in range(1999, 2022):
         tasks.append((asset, stock_code, year))
 
-print(f"[TWSE] Starting {len(tasks)} monthly-endpoint requests (max 4 concurrent).", flush=True)
+print(f"[TWSE] Starting {len(tasks)} official December-close requests (max 4 workers, rate limited to at most one request every 1.05 seconds).", flush=True)
 with ThreadPoolExecutor(max_workers=4) as pool:
     futures = {
         pool.submit(fetch_twse_december_close, stock_code, year): (asset, year)
@@ -353,8 +384,8 @@ write_csv(OUT / "stock_annual_total_returns_wide.csv", wide_rows, wide_fields)
 audit = {
     "generated_at_utc": datetime.now(timezone.utc).isoformat(),
     "method": "Calendar-year total-return candidate = Yahoo adjusted close at last available trading observation of year / prior calendar-year-end adjusted close - 1. The adjusted-close time series is secondary source data and is not yet officially cross-checked.",
-    "base_price_method": "1996 raw December close is still unavailable from the currently queried free official endpoint; do not substitute annual average price. Official TWSE December last-trading-day closes are collected separately for 1999-2021.",
-    "official_december_close_method": "For each stock and each year 1999-2021, query TWSE STOCK_DAY for December and retain the last dated row with a valid raw close. These are price-only closes and are not total-return figures.",
+    "base_price_method": "1996 raw December close is still not provided by the official daily-close page currently queried (which begins 1999-01-05); do not substitute annual average price. Official TWSE December last-trading-day closes are collected separately for 1999-2021.",
+    "official_december_close_method": "For each stock and each year 1999-2021, query TWSE STOCK_DAY_AVG for December, identify the 收盤價 field by its field name, and retain the last dated row with a valid raw close. The 月平均價 field is deliberately excluded. These are price-only closes and are not total-return figures. Requests are rate-limited to reduce HTTP redirects/rate-limit failures.",
     "primary_sources_for_crosscheck": [
         {"name":"TWSE daily closing prices and monthly average prices dataset","url":OFFICIAL_PRICE_SOURCE},
         {"name":"TWSE listed-company dividend distribution dataset","url":OFFICIAL_DIVIDEND_SOURCE},
