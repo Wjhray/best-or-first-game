@@ -230,12 +230,82 @@ for result in series_results:
         "note": result["note"],
     }
 
+
+def fetch_twse_december_close(stock_code: str, year: int) -> dict:
+    """Fetch the official TWSE daily trading rows for December and retain the last close."""
+    month_date = f"{year}12" + "01"
+    url = "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?" + urllib.parse.urlencode({
+        "date": month_date, "stockNo": stock_code, "response": "json"
+    })
+    row = {
+        "year": year, "stock_code": stock_code, "last_trading_date": "",
+        "official_december_close_ntd": "", "status": "MISSING",
+        "source_url": url, "note": ""
+    }
+    try:
+        payload = fetch_json(url)
+        data = payload.get("data") or []
+        if not data:
+            row["note"] = str(payload.get("stat") or "No daily rows returned")
+            return row
+        # TWSE date format is ROC year/month/day; close is column 6.
+        def iso_date(record):
+            parts = str(record[0]).split("/")
+            if len(parts) != 3:
+                return ""
+            return f"{int(parts[0]) + 1911:04d}-{int(parts[1]):02d}-{int(parts[2]):02d}"
+        valid = []
+        for record in data:
+            if len(record) < 7:
+                continue
+            date_text = iso_date(record)
+            close_text = str(record[6]).replace(",", "").strip()
+            if date_text and close_text and close_text not in {"--", "-", "X0.00"}:
+                try:
+                    valid.append((date_text, float(close_text)))
+                except ValueError:
+                    continue
+        if valid:
+            date_text, close_value = max(valid, key=lambda x: x[0])
+            row.update({
+                "last_trading_date": date_text,
+                "official_december_close_ntd": close_value,
+                "status": "OK",
+                "note": "Official TWSE daily close for last available trading day in December."
+            })
+        else:
+            row["note"] = str(payload.get("stat") or "No usable close value in response")
+    except Exception as exc:
+        row["status"] = "ERROR"
+        row["note"] = f"{type(exc).__name__}: {exc}"
+    return row
+
+
+# Official TWSE monthly daily records are available from 1999-01-05 onward.
+# Keep this separate from Yahoo adjusted-close returns: official raw close is not total return.
+official_december_rows = []
+for asset in ASSETS:
+    stock_code = asset["ticker"].split(".")[0]
+    for year in range(1999, 2022):
+        row = fetch_twse_december_close(stock_code, year)
+        row["ticker"] = asset["ticker"]
+        row["game_name"] = asset["game_name"]
+        official_december_rows.append(row)
+        if row["status"] != "OK":
+            print(f"[TWSE] {asset['ticker']} {year}: {row['status']} {row['note']}")
+        time.sleep(0.12)
+
 def write_csv(path: Path, rows: list[dict], fieldnames: list[str]) -> None:
     with path.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(rows)
 
+write_csv(
+    OUT / "twse_official_december_closes_1999_2021.csv",
+    official_december_rows,
+    ["year","stock_code","ticker","game_name","last_trading_date","official_december_close_ntd","status","source_url","note"],
+)
 write_csv(
     OUT / "stock_annual_total_return_candidates.csv",
     return_rows,
@@ -265,7 +335,8 @@ write_csv(OUT / "stock_annual_total_returns_wide.csv", wide_rows, wide_fields)
 audit = {
     "generated_at_utc": datetime.now(timezone.utc).isoformat(),
     "method": "Calendar-year total-return candidate = Yahoo adjusted close at last available trading observation of year / prior calendar-year-end adjusted close - 1. The adjusted-close time series is secondary source data and is not yet officially cross-checked.",
-    "base_price_method": "Raw close on the last available December 1996 trading day; not retrospectively adjusted.",
+    "base_price_method": "1996 raw December close is still unavailable from the currently queried free official endpoint; do not substitute annual average price. Official TWSE December last-trading-day closes are collected separately for 1999-2021.",
+    "official_december_close_method": "For each stock and each year 1999-2021, query TWSE STOCK_DAY for December and retain the last dated row with a valid raw close. These are price-only closes and are not total-return figures.",
     "primary_sources_for_crosscheck": [
         {"name":"TWSE daily closing prices and monthly average prices dataset","url":OFFICIAL_PRICE_SOURCE},
         {"name":"TWSE listed-company dividend distribution dataset","url":OFFICIAL_DIVIDEND_SOURCE},
@@ -277,6 +348,9 @@ audit = {
     "totals": {
         "assets": len(ASSETS),
         "annual_return_rows": len(return_rows),
+        "official_december_close_rows": len(official_december_rows),
+        "official_december_closes_found": sum(1 for r in official_december_rows if r["status"] == "OK"),
+        "official_december_closes_missing_or_error": sum(1 for r in official_december_rows if r["status"] != "OK"),
         "complete_return_rows": sum(1 for r in return_rows if r["status"] == "OK"),
         "missing_return_rows": sum(1 for r in return_rows if r["status"] != "OK"),
         "base_prices_found": sum(1 for r in price_rows if r["status"] == "OK"),
