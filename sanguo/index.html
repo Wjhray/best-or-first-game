@@ -78,7 +78,14 @@ const originProfiles={
 "工匠之家":{health:[55,82],wealth:[16,43],knowledge:[8,25],martial:[6,19],family:[42,76],renown:[0,5],constitution:[0.75,1.15],learning:[0.85,1.22],combat:[0.7,1.05],social:[0.8,1.15],commerce:[0.85,1.22]},
 "寒門讀書人":{health:[45,76],wealth:[8,28],knowledge:[18,36],martial:[4,15],family:[45,76],renown:[0,5],constitution:[0.65,1.1],learning:[1,1.35],combat:[0.6,1],social:[0.8,1.18],commerce:[0.65,1.02]},
 "流民或孤兒":{health:[35,68],wealth:[0,15],knowledge:[2,14],martial:[5,20],family:[5,35],renown:[0,2],constitution:[0.65,1.18],learning:[0.65,1.1],combat:[0.72,1.18],social:[0.6,1.05],commerce:[0.55,0.95]}
-};;
+};
+// Legacy origin aliases are retained so existing multiplayer saves and events remain compatible.
+originProfiles["布衣工匠"]=originProfiles["工匠之家"];
+originProfiles["行商之子"]=originProfiles["商賈之家"];
+originProfiles["佃農之家"]=originProfiles["農家子弟"];
+originProfiles["地方豪族旁支"]=originProfiles["豪門士族"];
+originProfiles["軍戶子弟"]=originProfiles["軍人世家"];
+originProfiles["醫者學徒"]=originProfiles["寒門讀書人"];
 function increaseStat(stat,base){const talentKey={health:"constitution",wealth:"commerce",knowledge:"learning",martial:"combat",renown:"social",family:"social"}[stat];const talent=game&&game.aptitude&&talentKey?game.aptitude[talentKey]:1;const amount=Math.max(1,Math.round(base*(talent||1)));game.stats[stat]=Math.min(100,(game.stats[stat]||0)+amount);return amount}
 function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function addLog(title,desc,year=game.year){game.log.unshift({year,title,desc});game.log=game.log.slice(0,80);renderLogs()}
