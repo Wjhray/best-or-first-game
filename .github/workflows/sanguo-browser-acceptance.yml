@@ -1,0 +1,50 @@
+name: Sanguo Browser Acceptance
+
+on:
+  push:
+    branches:
+      - design/sanguo-world-event-rules
+    paths:
+      - "sanguo/index.html"
+      - "sanguo/events-66.json"
+      - ".github/tests/sanguo-browser-acceptance.cjs"
+      - ".github/workflows/sanguo-browser-acceptance.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  browser-acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout development branch
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Playwright
+        run: npm install --no-save playwright
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Start local test server
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 --directory "$GITHUB_WORKSPACE" >/tmp/sanguo-http.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:8765/sanguo/index.html >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/sanguo-http.log
+          exit 1
+      - name: Run browser acceptance tests
+        run: node .github/tests/sanguo-browser-acceptance.cjs
+      - name: Upload failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sanguo-browser-acceptance-failure
+          path: |
+            /tmp/sanguo-browser-acceptance-failure.png
+            /tmp/sanguo-http.log
+          if-no-files-found: ignore
