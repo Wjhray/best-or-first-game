@@ -149,7 +149,7 @@
       <button class="danger" id="sellBtn" disabled>賣出</button>
     </div>
     <button class="secondary full" id="holdModalBtn" type="button">關閉視窗，返回市場</button>
-    <button class="secondary full" id="clearSelectionBtn" type="button">取消選擇</button>
+    
     <p class="modal-note">依目前價格估算，未包含手續費、交易稅及滑價。完成買進、賣出或觀望後，才會揭曉本輪年份與報酬。</p>
   </section>
 </div>
@@ -323,7 +323,7 @@ $("tradeModal").addEventListener("click",e=>{if(e.target===$("tradeModal"))close
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("tradeModal").classList.contains("hidden"))closeTradeModal(false);});
 $("advanceBtn").addEventListener("click",()=>{if(state.phase==="idle")startGame();else if(state.phase==="trade")revealRound();else if(state.phase==="next")nextRound();});
 $("resetBtn").addEventListener("click",()=>{if(window.confirm("確定放棄目前進度並重新抽取 20 個年度嗎？"))startGame();});
-$("clearSelectionBtn").addEventListener("click",()=>closeTradeModal(true));
+
 $("playAgainBtn").addEventListener("click",()=>{startGame();window.scrollTo({top:0,behavior:"smooth"});});
 loadGame();
 })();
